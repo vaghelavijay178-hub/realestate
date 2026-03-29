@@ -501,8 +501,6 @@ export default function Home() {
               <li>P2C property introduction reel</li>
               <li>VO amenities highlight reel</li>
               <li>Scroll-stopping eye-catching reel</li>
-              <li>Delivered in 3 business days</li>
-              <li>MLS &amp; social ready exports</li>
             </ul>
             <div className="pkg-price">₹75,000 <span>/ 3 deliverables</span></div>
           </div>

@@ -50,5 +50,3 @@ const PackagesSection = () => {
     </section>
   );
 };
-
-export default PackagesSection;

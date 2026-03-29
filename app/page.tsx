@@ -496,43 +496,36 @@ export default function Home() {
           <div className="package-card reveal">
             <div className="pkg-num">#01</div>
             <div className="pkg-name">Essential</div>
-            <div className="pkg-tagline">Perfect for standard listings that need a professional edge.</div>
+            <div className="pkg-tagline"> Get seen. Get remembered.</div>
             <ul className="pkg-features">
-              <li>1–2 min walkthrough video</li>
-              <li>Basic color grade &amp; edit</li>
-              <li>1 revision round</li>
+              <li>P2C property introduction reel</li>
+              <li>VO amenities highlight reel</li>
+              <li>Scroll-stopping eye-catching reel</li>
               <li>Delivered in 3 business days</li>
               <li>MLS &amp; social ready exports</li>
             </ul>
-            <div className="pkg-price">₹9,999 <span>/ listing</span></div>
+            <div className="pkg-price">₹75,000 <span>/ 3 deliverables</span></div>
           </div>
           <div className="package-card featured reveal reveal-d1">
             <div className="pkg-num">#02</div>
             <div className="pkg-name">Signature</div>
-            <div className="pkg-tagline">Our most popular — cinematic quality that closes deals.</div>
+            <div className="pkg-tagline">Convert attention into trust.</div>
             <ul className="pkg-features">
-              <li>2–3 min cinematic reel</li>
-              <li>Drone aerial footage (4K)</li>
-              <li>Pro color grade + score</li>
-              <li>2 revision rounds</li>
-              <li>Short-form social cut (30s)</li>
-              <li>Delivered in 5 business days</li>
+              <li>Everything in The Essential</li>
+              <li>Location benefits reel</li>
+              <li>Carousel post + 2 Instagram story images</li>
             </ul>
-            <div className="pkg-price">₹19,999 <span>/ listing</span></div>
+            <div className="pkg-price">₹1,10,000 <span>/ 5 deliverables</span></div>
           </div>
           <div className="package-card reveal reveal-d2">
             <div className="pkg-num">#03</div>
             <div className="pkg-name">Luxury</div>
-            <div className="pkg-tagline">White-glove production for premium properties.</div>
+            <div className="pkg-tagline">The film that defines the project.</div>
             <ul className="pkg-features">
-              <li>3–5 min feature film reel</li>
-              <li>Extended drone + ground work</li>
-              <li>Twilight &amp; golden hour shots</li>
-              <li>Unlimited revisions</li>
-              <li>3× social cuts (9:16 + 1:1)</li>
-              <li>Agent intro/outro branding</li>
+              <li>Everything in The Essential and Signature</li>
+              <li>Cinematic property walk-through film</li>
             </ul>
-            <div className="pkg-price">₹34,999 <span>/ listing</span></div>
+            <div className="pkg-price">₹1,75,000 <span>/ 6 deliverables</span></div>
           </div>
         </div>
       </section>

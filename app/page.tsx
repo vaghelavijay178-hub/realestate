@@ -57,10 +57,7 @@ export default function Page() {
       </section>
 
       {/* PACKAGES */}
-      // components/PackagesSection.jsx
-import React from "react";
-
-const packages = [
+      [
   {
     name: "The Presence",
     tagline: "Get seen. Get remembered.",

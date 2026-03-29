@@ -1,0 +1,54 @@
+const PackagesSection = () => {
+  return (
+    <section className="bg-black text-white py-16 px-4">
+      <h2 className="text-4xl font-bold text-center mb-12">Our Packages</h2>
+
+      <div className="grid gap-8 md:grid-cols-3">
+        {/* Starter */}
+        <div className="border p-6 rounded-lg hover:shadow-lg transition">
+          <h3 className="text-2xl font-bold mb-2">Starter - The Presence</h3>
+          <p className="text-orange-500 mb-4">₹75,000 / package</p>
+          <p className="mb-4">Get seen. Get remembered.</p>
+          <ul className="mb-4 list-disc list-inside">
+            <li>P2C property introduction reel AI</li>
+            <li>VO amenities highlight reel AI</li>
+            <li>Scroll-stopping eye-catching reel AI</li>
+          </ul>
+        </div>
+
+        {/* Most Popular */}
+        <div className="border p-6 rounded-lg hover:shadow-lg transition">
+          <h3 className="text-2xl font-bold mb-2">Most Popular - The Authority</h3>
+          <p className="text-orange-500 mb-4">₹1,10,000 / package</p>
+          <ul className="mb-4 list-disc list-inside">
+            <li>Everything in The Presence</li>
+            <li>Location benefits reel AI</li>
+            <li>Carousel post + 2 Instagram story images AI</li>
+          </ul>
+        </div>
+
+        {/* Premium */}
+        <div className="border p-6 rounded-lg hover:shadow-lg transition">
+          <h3 className="text-2xl font-bold mb-2">Premium - The Legacy</h3>
+          <p className="text-orange-500 mb-4">₹1,75,000 / package</p>
+          <ul className="mb-4 list-disc list-inside">
+            <li>Everything in The Authority</li>
+            <li>Cinematic property walk-through film AI</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Add-ons */}
+      <h3 className="text-3xl font-bold mt-12 mb-6">Add-ons</h3>
+      <ul className="list-disc list-inside space-y-2">
+        <li>Extra scroll-stopping reel: ₹30,000</li>
+        <li>Extra VO amenities reel: ₹30,000</li>
+        <li>Extra location reel: ₹25,000</li>
+        <li>Extra carousel + 2 stories: ₹15,000</li>
+        <li>Monthly retainer (2 reels/mo): ₹55,000/mo</li>
+      </ul>
+    </section>
+  );
+};
+
+export default PackagesSection;

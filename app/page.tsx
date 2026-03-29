@@ -33,18 +33,20 @@ export default function Website() {
       </section>
 
       {/* WORK */}
-      <section id="work" className="py-20 px-6">
-        <h2 className="text-3xl font-bold text-center mb-10">Featured Work</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          {[1,2,3].map((item) => (
-            <div key={item} className="bg-gray-900 p-4 rounded-2xl">
-              <div className="h-40 bg-gray-800 rounded-xl mb-4 flex items-center justify-center text-gray-500">
-                Video Placeholder
-              </div>
-              <p className="text-sm text-gray-400">Project Video {item}</p>
-            </div>
-          ))}
-        </div>
+      <div className="bg-gray-900 p-4 rounded-2xl">
+  <iframe
+    src="https://www.instagram.com/reel/XXXXXXXX/embed"
+    className="w-full h-64 rounded-xl"
+    allowFullScreen
+  ></iframe>
+  <p className="text-sm text-gray-400 mt-2">Project Reel</p>
+</div>
+<video
+  src="YOUR_VIDEO_LINK"
+  controls
+  className="rounded-xl w-full"
+/>
+  
 
         <div className="text-center mt-10">
           <a href="https://www.notion.so/Video-Editor-Portfolio-Vijay-Vaghela-280b288e18bc80cbebf192941" target="_blank" rel="noopener noreferrer">

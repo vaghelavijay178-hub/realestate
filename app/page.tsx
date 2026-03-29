@@ -33,15 +33,16 @@ export default function Website() {
       </section>
 
       {/* WORK */}
-      {/* WORK */}
-<section id="work" className="py-20 px-6">
+     <div className="grid md:grid-cols-3 gap-6">
   <div className="bg-gray-900 p-4 rounded-2xl">
-  <iframe
-    src="https://www.instagram.com/reel/XXXXXXXX/embed"
-    className="w-full h-64 rounded-xl"
-    allowFullScreen
-  ></iframe>
-  <p className="text-sm text-gray-400 mt-2">Project Reel</p>
+    <iframe src="https://www.instagram.com/reel/REEL1/embed" className="w-full h-64 rounded-xl"></iframe>
+  </div>
+  <div className="bg-gray-900 p-4 rounded-2xl">
+    <iframe src="https://www.instagram.com/reel/REEL2/embed" className="w-full h-64 rounded-xl"></iframe>
+  </div>
+  <div className="bg-gray-900 p-4 rounded-2xl">
+    <iframe src="https://www.instagram.com/reel/REEL3/embed" className="w-full h-64 rounded-xl"></iframe>
+  </div>
 </div>
 
         <div className="text-center mt-10">

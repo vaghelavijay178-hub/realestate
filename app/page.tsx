@@ -41,12 +41,6 @@ export default function Website() {
   ></iframe>
   <p className="text-sm text-gray-400 mt-2">Project Reel</p>
 </div>
-<video
-  src="YOUR_VIDEO_LINK"
-  controls
-  className="rounded-xl w-full"
-/>
-  
 
         <div className="text-center mt-10">
           <a href="https://www.notion.so/Video-Editor-Portfolio-Vijay-Vaghela-280b288e18bc80cbebf192941" target="_blank" rel="noopener noreferrer">

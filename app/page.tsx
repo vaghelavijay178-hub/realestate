@@ -33,7 +33,9 @@ export default function Website() {
       </section>
 
       {/* WORK */}
-      <div className="bg-gray-900 p-4 rounded-2xl">
+      {/* WORK */}
+<section id="work" className="py-20 px-6">
+  <div className="bg-gray-900 p-4 rounded-2xl">
   <iframe
     src="https://www.instagram.com/reel/XXXXXXXX/embed"
     className="w-full h-64 rounded-xl"

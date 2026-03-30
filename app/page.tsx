@@ -464,11 +464,14 @@ export default function Home() {
       <section className="about-section" id="about">
         <div className="about-left reveal">
           <div className="section-eyebrow">Behind the Lens</div>
-          <h2>Shaping Listings That Sell Before Open Day</h2>
+          <h2>Shaping Visuals That Sell Property Before Open Day</h2>
         </div>
         <div className="about-right reveal reveal-d2">
-          <p>I&apos;m a real estate videographer focused on building <strong>cinematic, high-impact reels</strong> that make properties feel irresistible — before anyone ever steps through the door.</p>
-          <p>From luxury estates to starter homes, I craft visual stories that connect buyers emotionally and give agents a competitive edge in any market.</p>
+          <p>I&aposWith expertise in AI-driven content creation, I help real estate projects create high-impact visuals that stand out in a cluttered market.
+
+From luxury estates to emerging developments, I craft visual stories that don’t just showcase spaces, but build emotional connection and elevate perceived value. My work is designed to capture attention instantly and give builders and agents a clear competitive edge.
+
+By blending real footage with advanced editing and modern visual techniques, I help audiences experience the property — not just view it.</p>
           <div className="cta-row">
             <a href="#contact" className="btn-primary">
               Let&apos;s Work Together

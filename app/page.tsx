@@ -429,7 +429,7 @@ export default function Home() {
 
         <div className="hero-content">
           <div className="hero-eyebrow">Ai powered Real Estate Video Services</div>
-          <h1 className="hero-title">In a city of standard videos, be the<br/><em>AI-powered exception</em></h1>
+          <h1 className="hero-title">AI-Driven<br/><em>Property Films</em></h1>
         </div>
 
         <div className="hero-tagline">

@@ -479,7 +479,7 @@ By blending real footage with advanced editing and modern visual techniques, I h
             <div className="section-eyebrow">What&apos;s Included</div>
             <h2>Choose Your Package</h2>
           </div>
-          <p>Flexible options built for agents who take their listings seriously.</p>
+          <p>premium option for people who take their business seriously.</p>
         </div>
         <div className="packages-grid">
           <div className="package-card reveal">

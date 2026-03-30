@@ -389,7 +389,7 @@ export default function Home() {
 
       {/* NAV */}
       <nav ref={navRef}>
-        <a href="#" className="nav-logo">Frame<span>Shot</span></a>
+        <a href="#" className="nav-logo">Vijay<span>Vaghela</span></a>
         <div className="nav-links">
           <a href="#about">About</a>
           <a href="#packages">Packages</a>
@@ -428,8 +428,8 @@ export default function Home() {
         </div>
 
         <div className="hero-content">
-          <div className="hero-eyebrow">Real Estate Video Services</div>
-          <h1 className="hero-title">Sell Homes<br/><em>Faster.</em></h1>
+          <div className="hero-eyebrow">Ai powered Real Estate Video Services</div>
+          <h1 className="hero-title">In a city of standard videos, be the<br/><em>AI-powered exception</em></h1>
         </div>
 
         <div className="hero-tagline">

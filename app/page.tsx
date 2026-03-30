@@ -418,12 +418,12 @@ export default function Home() {
         </a>
 
         <div className="hero-property-tag">
-          <div className="property-tag-label">Latest Project</div>
-          <div className="property-tag-title">Sunset Ridge Estate</div>
+          <div className="property-tag-label">OUR STANDARD</div>
+          <div className="property-tag-title">AI-POWERED CINEMATIC TOUR</div>
           <div className="property-tag-stats">
-            <div className="stat-item"><div className="stat-num">4K</div><div className="stat-label">Drone</div></div>
-            <div className="stat-item"><div className="stat-num">3:20</div><div className="stat-label">Run Time</div></div>
-            <div className="stat-item"><div className="stat-num">2×</div><div className="stat-label">Sold Faster</div></div>
+            <div className="stat-item"><div className="stat-num">4K</div><div className="stat-label">CINEMATIC</div></div>
+            <div className="stat-item"><div className="stat-num">AI</div><div className="stat-label">ENHANCED</div></div>
+            <div className="stat-item"><div className="stat-num">AI</div><div className="stat-label">STAGING</div></div>
           </div>
         </div>
 
@@ -434,11 +434,10 @@ export default function Home() {
 
         <div className="hero-tagline">
           <h3>Every frame tells a story buyers can&apos;t ignore.</h3>
-          <p>Cinematic video production that moves listings — not just cameras.</p>
         </div>
 
         <div className="hero-services">
-          {[["#01","Drone Aerial"],["#02","Walkthrough Reels"],["#03","Social Cuts"],["#04","Property Highlights"]].map(([num, name]) => (
+          {[["#01","Drone Aerial"],["#02","Walkthrough Film"],["#03","Eye catching reels"],["#04","Property Highlights"]].map(([num, name]) => (
             <div className="hero-service-item" key={num}>
               <span className="service-num">{num}</span>
               <span className="service-name">{name}</span>
@@ -447,27 +446,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TRUSTED STRIP */}
-      <div className="trusted-strip">
-        <div className="trusted-label">Trusted by Agents<br/>& Brokerages</div>
-        <div className="trusted-brands">
-          {[["RE","RE/MAX Elite"],["KW","Keller Williams"],["CB","Coldwell Banker"],["SB","Sotheby's Realty"]].map(([code, name]) => (
-            <div className="brand-item" key={code}>
-              <div className="brand-icon">{code}</div>
-              <span className="brand-name">{name}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-
       {/* ABOUT */}
       <section className="about-section" id="about">
         <div className="about-left reveal">
-          <div className="section-eyebrow">Behind the Lens</div>
+          <div className="section-eyebrow">Vision that</div>
           <h2>Shaping Visuals That Sell Property Before Open Day</h2>
         </div>
         <div className="about-right reveal reveal-d2">
-          <p>I&aposWith expertise in AI-driven content creation, I help real estate projects create high-impact visuals that stand out in a cluttered market.
+          <p>With expertise in AI-driven content creation, I help real estate projects create high-impact visuals that stand out in a cluttered market.
 
 From luxury estates to emerging developments, I craft visual stories that don’t just showcase spaces, but build emotional connection and elevate perceived value. My work is designed to capture attention instantly and give builders and agents a clear competitive edge.
 

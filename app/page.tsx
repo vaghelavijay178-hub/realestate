@@ -2,6 +2,50 @@
  
 import { useEffect, useRef, useState } from "react";
 
+const REELS = [
+  {
+    type: "youtube",
+    id: "YOUR_YOUTUBE_ID_1",       // ← paste your YouTube video ID here
+    title: "Aerial Estate — Anand, GJ",
+    meta: "Drone 4K · 3:42",
+    thumb: "",                      // ← optional: "/images/thumb-1.jpg"
+    wide: true,
+  },
+  {
+    type: "youtube",
+    id: "YOUR_YOUTUBE_ID_2",
+    title: "Modern Villa — Vadodara",
+    meta: "Walkthrough · 2:15",
+    thumb: "",
+    wide: false,
+  },
+  {
+    type: "youtube",
+    id: "YOUR_YOUTUBE_ID_3",
+    title: "Interior Tour — Surat",
+    meta: "Interior · 1:58",
+    thumb: "",
+    wide: false,
+  },
+  {
+    type: "youtube",
+    id: "YOUR_YOUTUBE_ID_4",
+    title: "Twilight Shoot — Ahmedabad",
+    meta: "Golden Hour · 2:44",
+    thumb: "",
+    wide: false,
+  },
+] as const;
+ 
+// Builds the embed URL for the modal player
+function getEmbedUrl(type: string, id: string) {
+  if (type === "youtube") return `https://www.youtube.com/embed/${id}?autoplay=1&rel=0`;
+  if (type === "vimeo")   return `https://player.vimeo.com/video/${id}?autoplay=1`;
+  return "";
+}
+ 
+export default function Home() {
+
 {
   const cursorRef = useRef<HTMLDivElement>(null);
   const ringRef = useRef<HTMLDivElement>(null);

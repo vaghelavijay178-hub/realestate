@@ -533,106 +533,68 @@ By blending real footage with advanced editing and modern visual techniques, I h
       </div>
 
       {/* WORK / REELS */}
-      <section className="work-section" id="work">
-        <div className="work-header reveal">
-          <div>
-            <div className="section-eyebrow">Selected Work</div>
-            <h2>Recent Reels</h2>
-          </div>
-          <a href="#">View All Projects →</a>
-        </div>
-        <div className="reels-grid">
-          {/* Card 1 — wide aerial */}
-          <div className="reel-card reveal">
-            <svg style={{position:"absolute",inset:0,zIndex:0}} viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" width="100%" height="100%">
-              <defs>
-                <linearGradient id="sky1" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#1a1a1a"/>
-                  <stop offset="100%" stopColor="#2d2520"/>
-                </linearGradient>
-              </defs>
-              <rect width="800" height="450" fill="url(#sky1)"/>
-              <rect x="100" y="180" width="600" height="180" rx="4" fill="#242220" opacity="0.8"/>
-              <rect x="100" y="180" width="600" height="180" rx="4" fill="none" stroke="#383530" strokeWidth="1"/>
-              <rect x="480" y="200" width="180" height="100" rx="6" fill="#1a3040" opacity="0.7"/>
-              <rect x="480" y="200" width="180" height="100" rx="6" fill="none" stroke="#2a4558" strokeWidth="1.5"/>
-              <rect x="110" y="190" width="340" height="160" rx="3" fill="#2a2822" stroke="#3a3830" strokeWidth="1"/>
-              <rect x="200" y="360" width="80" height="90" fill="#222020" stroke="#2e2c2a" strokeWidth="1"/>
-              <circle cx="160" cy="400" r="22" fill="#1e2018" stroke="#282a20" strokeWidth="1"/>
-              <circle cx="650" cy="390" r="18" fill="#1e2018"/>
-              <line x1="0" y1="180" x2="800" y2="180" stroke="#F4500A" strokeWidth="0.75" opacity="0.4"/>
-            </svg>
-            <div className="reel-bg" style={{background:"linear-gradient(160deg,#2a2a2a 0%,#1a1a1a 40%,#3a3020 100%)"}}/>
-            <div className="reel-overlay"/>
-            <div className="reel-info">
-              <div><div className="reel-title">Aerial Estate — Anand, GJ</div><div className="reel-meta">Drone 4K · 3:42</div></div>
-              <div className="reel-play"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 1.5L10 6L2 10.5V1.5Z" fill="white"/></svg></div>
-            </div>
-          </div>
-          {/* Card 2 */}
-          <div className="reel-card reveal reveal-d1">
-            <svg style={{position:"absolute",inset:0,zIndex:0}} viewBox="0 0 380 480" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" width="100%" height="100%">
-              <rect width="380" height="480" fill="#181614"/>
-              <rect x="40" y="120" width="300" height="260" rx="2" fill="#222020"/>
-              <rect x="60" y="145" width="90" height="55" rx="2" fill="#2a2820" stroke="#323028" strokeWidth="1"/>
-              <rect x="170" y="145" width="90" height="55" rx="2" fill="#2a2820" stroke="#323028" strokeWidth="1"/>
-              <rect x="60" y="220" width="90" height="55" rx="2" fill="#292720" stroke="#323028" strokeWidth="1"/>
-              <rect x="170" y="220" width="90" height="55" rx="2" fill="#312f28" stroke="#3a3830" strokeWidth="1.5"/>
-              <rect x="140" y="310" width="100" height="70" rx="2" fill="#1e1c18" stroke="#2e2c28" strokeWidth="1"/>
-              <rect x="0" y="380" width="380" height="100" fill="#111010"/>
-              <ellipse cx="190" cy="380" rx="220" ry="20" fill="#F4500A" opacity="0.08"/>
-            </svg>
-            <div className="reel-bg" style={{background:"linear-gradient(135deg,#1e1e1e 0%,#2d2520 100%)"}}/>
-            <div className="reel-overlay"/>
-            <div className="reel-info">
-              <div><div className="reel-title">Modern Villa — Vadodara</div><div className="reel-meta">Walkthrough · 2:15</div></div>
-              <div className="reel-play"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 1.5L10 6L2 10.5V1.5Z" fill="white"/></svg></div>
-            </div>
-          </div>
-          {/* Card 3 */}
-          <div className="reel-card reveal reveal-d2">
-            <svg style={{position:"absolute",inset:0,zIndex:0}} viewBox="0 0 380 480" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" width="100%" height="100%">
-              <rect width="380" height="480" fill="#161412"/>
-              <polygon points="0,0 380,0 280,120 100,120" fill="#1e1c18"/>
-              <polygon points="0,0 100,120 100,360 0,480" fill="#181614"/>
-              <polygon points="380,0 380,480 280,360 280,120" fill="#201e1c"/>
-              <rect x="100" y="120" width="180" height="240" fill="#1a1816"/>
-              <rect x="145" y="145" width="90" height="90" fill="#1e2028" stroke="#2a2a38" strokeWidth="1.5"/>
-              <line x1="190" y1="145" x2="190" y2="235" stroke="#2a2a38" strokeWidth="1"/>
-              <line x1="145" y1="190" x2="235" y2="190" stroke="#2a2a38" strokeWidth="1"/>
-              <ellipse cx="190" cy="190" rx="50" ry="50" fill="#F4500A" opacity="0.04"/>
-            </svg>
-            <div className="reel-bg" style={{background:"linear-gradient(145deg,#1a1a1a 0%,#252520 100%)"}}/>
-            <div className="reel-overlay"/>
-            <div className="reel-info">
-              <div><div className="reel-title">Interior Tour — Surat</div><div className="reel-meta">Interior · 1:58</div></div>
-              <div className="reel-play"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 1.5L10 6L2 10.5V1.5Z" fill="white"/></svg></div>
-            </div>
-          </div>
-          {/* Card 4 */}
-          <div className="reel-card reveal reveal-d3">
-            <svg style={{position:"absolute",inset:0,zIndex:0}} viewBox="0 0 380 480" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" width="100%" height="100%">
-              <rect width="380" height="480" fill="#141214"/>
-              <rect x="0" y="0" width="380" height="220" fill="#1a1418"/>
-              <rect x="40" y="200" width="300" height="180" rx="8" fill="#1a2830"/>
-              <rect x="40" y="200" width="300" height="180" rx="8" fill="none" stroke="#243240" strokeWidth="1.5"/>
-              <ellipse cx="190" cy="290" rx="80" ry="15" fill="none" stroke="#2a4050" strokeWidth="1" opacity="0.7"/>
-              <ellipse cx="190" cy="250" rx="120" ry="25" fill="#F4500A" opacity="0.06"/>
-              <rect x="30" y="195" width="320" height="12" rx="2" fill="#1e1c1a" stroke="#2a2826" strokeWidth="1"/>
-              <circle cx="80" cy="40" r="1.5" fill="#aaa" opacity="0.5"/>
-              <circle cx="200" cy="25" r="1" fill="#aaa" opacity="0.4"/>
-              <circle cx="320" cy="60" r="1.5" fill="#aaa" opacity="0.5"/>
-            </svg>
-            <div className="reel-bg" style={{background:"linear-gradient(120deg,#201e1a 0%,#2a2a2a 100%)"}}/>
-            <div className="reel-overlay"/>
-            <div className="reel-info">
-              <div><div className="reel-title">Twilight Shoot — Ahmedabad</div><div className="reel-meta">Golden Hour · 2:44</div></div>
-              <div className="reel-play"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 1.5L10 6L2 10.5V1.5Z" fill="white"/></svg></div>
-            </div>
-          </div>
-        </div>
-      </section>
+     <section className="py-20 px-6 bg-black text-white">
+  <div className="flex justify-between items-center mb-10">
+    <div>
+      <p className="text-orange-500 text-sm">SELECTED WORK</p>
+      <h2 className="text-4xl md:text-5xl font-bold">RECENT REELS</h2>
+    </div>
 
+    <a
+      href="https://www.instagram.com/"
+      target="_blank"
+      className="text-sm text-orange-500 hover:underline"
+    >
+      View All Projects →
+    </a>
+  </div>
+
+  <div className="grid md:grid-cols-2 gap-8">
+    
+    {/* Reel Card */}
+    <a
+      href="https://www.instagram.com/reel/XXXXXXXX/"
+      target="_blank"
+      className="relative group"
+    >
+      <img
+        src="/reel1.jpg"
+        className="rounded-2xl w-full h-[350px] object-cover"
+      />
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition rounded-2xl" />
+
+      {/* Play Button */}
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="w-16 h-16 rounded-full border border-orange-500 flex items-center justify-center text-orange-500 text-xl group-hover:scale-110 transition">
+          ▶
+        </div>
+      </div>
+    </a>
+
+    {/* Reel Card 2 */}
+    <a
+      href="https://www.instagram.com/reel/XXXXXXXX/"
+      target="_blank"
+      className="relative group"
+    >
+      <img
+        src="/reel2.jpg"
+        className="rounded-2xl w-full h-[350px] object-cover"
+      />
+
+      <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition rounded-2xl" />
+
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="w-16 h-16 rounded-full border border-orange-500 flex items-center justify-center text-orange-500 text-xl group-hover:scale-110 transition">
+          ▶
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
       {/* FOOTER */}
       <footer id="contact">
         <div className="footer-top">

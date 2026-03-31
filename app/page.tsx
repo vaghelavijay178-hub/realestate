@@ -575,7 +575,7 @@ By blending real footage with advanced editing and modern visual techniques, I h
 
     {/* Reel Card 2 */}
     <a
-      href="https://www.instagram.com/reel/XXXXXXXX/"
+      href="https://www.instagram.com/p/DWG5fOOjAZQ/"
       target="_blank"
       className="relative group"
     >

@@ -14,25 +14,25 @@ import { useEffect, useRef, useState } from "react";
 //  → Put image in /public/images/  e.g. "/images/reel-1.jpg"
 //  → Leave as "" for a dark placeholder
 // ============================================================
-const REELS = [
+const REELS: Reel[] = [
   {
-    id: "YOUR_YOUTUBE_ID_1",    // ← paste your YouTube ID here
-    title: "Aerial Estate",
-    location: "Anand, Gujarat",
-    thumb: "",                  // ← e.g. "/images/reel-1.jpg"
+    id: "https://vimeo.com/1178872449?share=copy&fl=sv&fe=ci", // ← Paste your Vimeo Video ID
+    title: "Empty plot to Building",
+    location: "Makarpura, Vadodara",
+    category: "Flat",
   },
   {
-    id: "YOUR_YOUTUBE_ID_2",
-    title: "Walkthrough Film",
-    location: "Vadodara, Gujarat",
-    thumb: "",
+    id: "987654321", // ← Paste your second Vimeo ID
+    title: "Next-Gen Property Film",
+    location: "Gotri, Vadodara",
+    category: "Commercial Space",
   },
   {
-    id: "YOUR_YOUTUBE_ID_3",
-    title: "Cinematic Property Tour",
-    location: "Surat, Gujarat",
-    thumb: "",
-  },
+    id: "456123789", // ← Paste your third Vimeo ID
+    title: "AI Virtual Staging",
+    location: "Vasna, Vadodara",
+    category: "Sample House",
+  }
 ];
 
 export default function Home() {

@@ -517,21 +517,6 @@ By blending real footage with advanced editing and modern visual techniques, I h
         </div>
       </section>
 
-      {/* STATS */}
-      <div className="stats-section">
-        {[
-          ["120","+","Properties filmed across Gujarat & beyond"],
-          ["3","×","Faster average sale for video-listed homes"],
-          ["4","K","Ultra-HD drone & ground footage, every shoot"],
-          ["98","%","Client satisfaction — agents keep coming back"],
-        ].map(([num, suffix, desc], i) => (
-          <div className={`stat-block reveal${i > 0 ? ` reveal-d${i}` : ""}`} key={num+suffix}>
-            <div className="stat-big">{num}<span>{suffix}</span></div>
-            <div className="stat-desc">{desc}</div>
-          </div>
-        ))}
-      </div>
-
       {/* WORK / REELS */}
     const reels = [
   {

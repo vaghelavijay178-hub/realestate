@@ -518,7 +518,18 @@ By blending real footage with advanced editing and modern visual techniques, I h
       </section>
 
       {/* WORK / REELS */}
-    export default function Page() {
+    "use client";
+
+export default function Home() {
+
+  const reels = [
+    {
+      thumbnail: "/reel1.jpg",
+      video: "https://www.youtube.com/embed/VIDEO_ID",
+    },
+  ];
+
+  return (
 
  
       {/* FOOTER */}

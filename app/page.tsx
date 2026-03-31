@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useRef } from "react";
 
 export default function Home() {
@@ -515,17 +517,6 @@ By blending real footage with advanced editing and modern visual techniques, I h
         </div>
       </section>
 
-      {/* WORK / REELS */}
-  const reels = [
-    {
-      thumbnail: "/reel1.jpg",
-      video: "https://www.youtube.com/embed/VIDEO_ID",
-    },
-  ];
-
-  return (
-
- 
       {/* FOOTER */}
       <footer id="contact">
         <div className="footer-top">

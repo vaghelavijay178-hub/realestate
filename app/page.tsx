@@ -1,3 +1,4 @@
+import ReelsSection from "./components/ReelsSection";
 "use client";
 
 import { useEffect, useRef } from "react";

@@ -520,19 +520,7 @@ By blending real footage with advanced editing and modern visual techniques, I h
       {/* WORK / REELS */}
     export default function Page() {
 
-  const reels = [
-    {
-      thumbnail: "/reel1.jpg",
-      video: "https://www.youtube.com/embed/VIDEO_ID",
-    },
-  ];
-
-  return (
-    <section>
-      {/* your UI here */}
-    </section>
-  );
-}
+ 
       {/* FOOTER */}
       <footer id="contact">
         <div className="footer-top">

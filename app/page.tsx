@@ -5,8 +5,8 @@ import { useEffect, useRef, useState } from "react";
 const REELS = [
   {
     id: "h3Vuti6l1ZQ",
-    title: "Sapno Ka Aangan",
-    location: "Makarpura, Gujarat",
+    title: "What inside ratnam parkview",
+    location: "Bhayli, Vadodara, Gujarat",
     thumb: "",
   },
   {
@@ -16,9 +16,9 @@ const REELS = [
     thumb: "",
   },
   {
-    id: "h3Vuti6l1ZQ",
-    title: "Sapno Ka Aangan",
-    location: "Makarpura, Gujarat",
+    id: "ykh3nF0G7dI",
+    title: "Ratnam Group ka Track Record",
+    location: "Makarpura, Vadodara, Gujarat",
     thumb: "",
   },
 ];;

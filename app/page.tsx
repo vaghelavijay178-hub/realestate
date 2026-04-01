@@ -21,6 +21,12 @@ const REELS = [
     location: "Makarpura, Vadodara, Gujarat",
     thumb: "",
   },
+  {
+    id: "ykh3nF0G7dI",
+    title: "Ratnam Group ka Track Record",
+    location: "Makarpura, Vadodara, Gujarat",
+    thumb: "",
+  },
 ];;
 
 export default function Home() {

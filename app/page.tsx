@@ -23,9 +23,9 @@ const REELS = [
     thumb: "",
   },
   {
-    id: "ykh3nF0G7dI",
-    title: "Ratnam Group ka Track Record",
-    location: "Makarpura, Vadodara, Gujarat",
+    id: "D7MuRdtNJ_4",
+    title: "Designed for effortless living",
+    location: "Bhayli, Vadodara, Gujarat",
     thumb: "",
   },
 ];;

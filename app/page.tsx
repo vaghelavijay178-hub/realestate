@@ -7,37 +7,37 @@ const REELS = [
     id: "h3Vuti6l1ZQ",
     title: "What inside ratnam parkview",
     location: "Bhayli, Vadodara, Gujarat",
-    thumb: "",
+    thumb: "https://img.youtube.com/vi/h3Vuti6l1ZQ/maxresdefault.jpg",
   },
   {
     id: "MW4mKin0i0k",
     title: "Empty plot to building",
     location: "Bhayli, Vadodara, Gujarat",
-    thumb: "",
+    thumb: "https://img.youtube.com/vi/MW4mKin0i0k/maxresdefault.jpg",
   },
   {
     id: "ykh3nF0G7dI",
     title: "Ratnam Group ka Track Record",
     location: "Makarpura, Vadodara, Gujarat",
-    thumb: "",
+    thumb: "https://img.youtube.com/vi/ykh3nF0G7dI/maxresdefault.jpg",
   },
   {
     id: "D7MuRdtNJ_4",
     title: "Designed for effortless living",
     location: "Bhayli, Vadodara, Gujarat",
-    thumb: "",
+    thumb: "https://img.youtube.com/vi/D7MuRdtNJ_4/maxresdefault.jpg",
   },
   {
     id: "2ITzNPUVo-E",
     title: "Space built for life",
     location: "Bhayli, Vadodara, Gujarat",
-    thumb: "",
+    thumb: "https://img.youtube.com/vi/2ITzNPUVo-E/maxresdefault.jpg",
   },
   {
     id: "sX04UHKuA9w",
     title: "Sapno ka aangan",
     location: "Makarpura, Vadodara, Gujarat",
-    thumb: "",
+    thumb: "https://img.youtube.com/vi/sX04UHKuA9w/maxresdefault.jpg",
   },
 ];
 
@@ -367,7 +367,6 @@ export default function Home() {
 
         .reel-thumb { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) brightness(0.85); transition: filter 0.4s ease; }
         .reel-card:hover .reel-thumb { filter: grayscale(0) brightness(1); }
-
         .reel-play-btn {
           position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
           z-index: 2; width: 58px; height: 58px; border-radius: 50%;
@@ -473,7 +472,7 @@ export default function Home() {
           <a href="#packages">Packages</a>
           <a href="#work">Work</a>
           <a href="#contact" className="btn-cta">
-            Book a Shoot
+            Contact Now
             <span className="arrow-dot">
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                 <path d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -496,34 +495,9 @@ export default function Home() {
         </div>
         <div className="hero-video-frame" />
         <div className="hero-noise" />
-        <a href="#work" className="play-badge">
-          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-            <path d="M7 4.5L17.5 11L7 17.5V4.5Z" fill="white"/>
-          </svg>
-        </a>
-        <div className="hero-property-tag">
-          <div className="property-tag-label">OUR STANDARD</div>
-          <div className="property-tag-title">AI-POWERED CINEMATIC TOUR</div>
-          <div className="property-tag-stats">
-            <div className="stat-item"><div className="stat-num">4K</div><div className="stat-label">CINEMATIC</div></div>
-            <div className="stat-item"><div className="stat-num">AI</div><div className="stat-label">ENHANCED</div></div>
-            <div className="stat-item"><div className="stat-num">AI</div><div className="stat-label">STAGING</div></div>
-          </div>
-        </div>
         <div className="hero-content">
           <div className="hero-eyebrow">Ai powered Real Estate Video Services</div>
           <h1 className="hero-title">AI-Driven<br/><em>Property Films</em></h1>
-        </div>
-        <div className="hero-tagline">
-          <h3>Every frame tells a story buyers can&apos;t ignore.</h3>
-        </div>
-        <div className="hero-services">
-          {[["#01","Drone Aerial"],["#02","Walkthrough Film"],["#03","Eye catching reels"],["#04","Property Highlights"]].map(([num, name]) => (
-            <div className="hero-service-item" key={num}>
-              <span className="service-num">{num}</span>
-              <span className="service-name">{name}</span>
-            </div>
-          ))}
         </div>
       </section>
 
@@ -536,8 +510,8 @@ export default function Home() {
         <div className="about-right reveal reveal-d2">
           <p>With expertise in AI-driven content creation, I help real estate projects create high-impact visuals that stand out in a cluttered market. From luxury estates to emerging developments, I craft visual stories that don&apos;t just showcase spaces, but build emotional connection and elevate perceived value. By blending real footage with advanced editing and modern visual techniques, I help audiences experience the property — not just view it.</p>
           <div className="cta-row">
-            <a href="#contact" className="btn-primary">
-              Let&apos;s Work Together
+            <a href="#work" className="btn-primary">
+              Explore Our Work
               <span className="arrow-dot">
                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
                   <path d="M1.5 6.5H11.5M11.5 6.5L7 2M11.5 6.5L7 11" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -556,7 +530,6 @@ export default function Home() {
             <div className="section-eyebrow">What&apos;s Included</div>
             <h2>Choose Your Package</h2>
           </div>
-          <p>premium option for people who take their business seriously.</p>
         </div>
         <div className="packages-grid">
           <div className="package-card reveal">
@@ -608,7 +581,7 @@ export default function Home() {
         <div className="footer-top">
           <div>
             <a href="#" className="footer-logo">Vijay<span>Vaghela</span></a>
-            <div className="footer-tagline">Cinematic real estate video for agents who don&apos;t settle.</div>
+            <div className="footer-tagline">Cinematic real estate video for people who don&apos;t settle.</div>
           </div>
           <div className="footer-links">
             <div className="footer-col">
@@ -629,9 +602,9 @@ export default function Home() {
         <div className="footer-bottom">
           <div className="footer-copy">© 2025 VijayVaghela. All rights reserved.</div>
           <div className="footer-socials">
-            <a href="#" className="social-btn">IG</a>
-            <a href="#" className="social-btn">YT</a>
-            <a href="#" className="social-btn">WA</a>
+            <a href="https://www.instagram.com/vijaycreates/" target="_blank" rel="noopener noreferrer" className="social-btn">IG</a>
+            <a href="https://www.linkedin.com/in/vijayvaghelain/" target="_blank" rel="noopener noreferrer" className="social-btn">LD</a>
+            <a href="https://wa.me/919586239648" target="_blank" rel="noopener noreferrer" className="social-btn">WA</a>
           </div>
         </div>
       </footer>

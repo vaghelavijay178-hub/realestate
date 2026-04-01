@@ -4,11 +4,24 @@ import { useEffect, useRef, useState } from "react";
 
 const REELS = [
   {
-    id: "h3Vuti6l1ZQ",   // ← paste here
+    id: "h3Vuti6l1ZQ",
     title: "Sapno Ka Aangan",
     location: "Makarpura, Gujarat",
+    thumb: "",
   },
-];
+  {
+    id: "h3Vuti6l1ZQ",
+    title: "Sapno Ka Aangan",
+    location: "Makarpura, Gujarat",
+    thumb: "",
+  },
+  {
+    id: "h3Vuti6l1ZQ",
+    title: "Sapno Ka Aangan",
+    location: "Makarpura, Gujarat",
+    thumb: "",
+  },
+];;
 
 export default function Home() {
   const cursorRef = useRef<HTMLDivElement>(null);

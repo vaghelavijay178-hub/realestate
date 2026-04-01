@@ -12,24 +12,10 @@ import { useEffect, useRef, useState } from "react";
 // ============================================================
 const REELS = [
   {
-    id: "1178872449",            // ← your Vimeo number ✅
-    title: "Sapno Ka Aangan",    // ← your video title ✅
+    id: "h3Vuti6l1ZQ",   // ← paste here
+    title: "Sapno Ka Aangan",
     location: "Makarpura, Gujarat",
-    thumb: "",
   },
-  {
-    id: "1178872449",       // ← paste 2nd video number
-    title: "Your Second Video",
-    location: "Your Location",
-    thumb: "",
-  },
-  {
-    id: "1178872449",       // ← paste 3rd video number
-    title: "Your Third Video",
-    location: "Your Location",
-    thumb: "",
-  },
-];
 
 export default function Home() {
   const cursorRef = useRef<HTMLDivElement>(null);

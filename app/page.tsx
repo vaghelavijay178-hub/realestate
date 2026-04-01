@@ -2,14 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 
-// ============================================================
-//  ✏️  YOUR REELS — THIS IS THE ONLY SECTION YOU NEED TO EDIT
-//
-//  HOW TO GET YOUR VIMEO ID:
-//  1. Open your video on Vimeo.com
-//  2. Look at the URL:  https://vimeo.com/123456789
-//  3. Copy only the number and paste below (keep the quotes)
-// ============================================================
 const REELS = [
   {
     id: "h3Vuti6l1ZQ",   // ← paste here

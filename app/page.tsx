@@ -87,7 +87,7 @@ export default function VideoCarousel() {
       </div>
     </div>
   );
-}
+};;
 
 export default function Home() {
   const cursorRef = useRef<HTMLDivElement>(null);

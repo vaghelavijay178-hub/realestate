@@ -1,10 +1,9 @@
- { id: "YOUTUBE_ID", title: "Video Name", location: "City, Gujarat", thumb: "" },
-
 "use client";
 
 import { useEffect, useRef, useState } from "react";
 
 const REELS = [
+  { id: "YOUTUBE_ID", title: "Video Name", location: "City, Gujarat", thumb: "" },
   {
     id: "h3Vuti6l1ZQ",
     title: "What inside ratnam parkview",

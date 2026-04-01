@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from "react";
 
 const REELS = [
-  { id: "YOUTUBE_ID", title: "Video Name", location: "City, Gujarat", thumb: "" },
   {
     id: "h3Vuti6l1ZQ",
     title: "What inside ratnam parkview",
@@ -32,6 +31,12 @@ const REELS = [
     id: "2ITzNPUVo-E",
     title: "Space built for life",
     location: "Bhayli, Vadodara, Gujarat",
+    thumb: "",
+  }
+  {
+    id: "sX04UHKuA9w",
+    title: "Sapno ka aangan",
+    location: "Makarpura, Vadodara, Gujarat",
     thumb: "",
   }
 ];;

@@ -10,9 +10,9 @@ const REELS = [
     thumb: "",
   },
   {
-    id: "h3Vuti6l1ZQ",
-    title: "Sapno Ka Aangan",
-    location: "Makarpura, Gujarat",
+    id: "MW4mKin0i0k",
+    title: "Empty plot to building",
+    location: "Bhayli, Vadodara, Gujarat",
     thumb: "",
   },
   {

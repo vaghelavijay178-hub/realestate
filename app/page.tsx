@@ -1,3 +1,5 @@
+ { id: "YOUTUBE_ID", title: "Video Name", location: "City, Gujarat", thumb: "" },
+
 "use client";
 
 import { useEffect, useRef, useState } from "react";
@@ -21,7 +23,6 @@ const REELS = [
     location: "Makarpura, Vadodara, Gujarat",
     thumb: "",
   },
-  { id: "YOUTUBE_ID", title: "Video Name", location: "City, Gujarat", thumb: "" },
   {
     id: "ykh3nF0G7dI",
     title: "Ratnam Group ka Track Record",

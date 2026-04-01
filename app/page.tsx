@@ -3,23 +3,33 @@
 import { useEffect, useRef, useState } from "react";
 
 // ============================================================
-//  YOUR REELS — paste your YouTube video IDs here
+//  ✏️  YOUR REELS — THIS IS THE ONLY SECTION YOU NEED TO EDIT
 //
-//  How to get a YouTube ID:
-//  Open your video → URL looks like:
-//  https://www.youtube.com/watch?v=dQw4w9WgXcQ
-//                                 ^^^^^^^^^^^^ this part is the ID
-//
-//  thumb: preview image shown on the card before playing
-//  → Put image in /public/images/  e.g. "/images/reel-1.jpg"
-//  → Leave as "" for a dark placeholder
+//  HOW TO GET YOUR VIMEO ID:
+//  1. Open your video on Vimeo.com
+//  2. Look at the URL:  https://vimeo.com/123456789
+//  3. Copy only the number and paste below (keep the quotes)
 // ============================================================
 const REELS = [
   {
-    id: "1178872449",   // ← paste your number here
-    title: "Sapno Ka Aangan",  // ← change to your video name
+    id: "1178872449",            // ← your Vimeo number ✅
+    title: "Sapno Ka Aangan",    // ← your video title ✅
     location: "Makarpura, Gujarat",
+    thumb: "",
   },
+  {
+    id: "1178872449",       // ← paste 2nd video number
+    title: "Your Second Video",
+    location: "Your Location",
+    thumb: "",
+  },
+  {
+    id: "1178872449",       // ← paste 3rd video number
+    title: "Your Third Video",
+    location: "Your Location",
+    thumb: "",
+  },
+];
 
 export default function Home() {
   const cursorRef = useRef<HTMLDivElement>(null);

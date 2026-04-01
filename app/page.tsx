@@ -281,7 +281,9 @@ export default function Home() {
         .hero { position: relative; min-height: 100vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 0 48px 60px; overflow: hidden; border-radius: 0 0 32px 32px; }
         .hero-bg { position: absolute; inset: 0; background: linear-gradient(135deg, #1a0800 0%, #8B2500 35%, #D44010 65%, #F4500A 100%); z-index: 0; }
         .hero-bg::after { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 60% 40%, rgba(244,80,10,0.35) 0%, transparent 60%), radial-gradient(ellipse at 10% 80%, rgba(0,0,0,0.7) 0%, transparent 50%); }
-        .hero-video-frame { position: absolute; inset: 0; z-index: 1; background: radial-gradient(ellipse at 70% 55%, rgba(20,8,0,0.45) 0%, transparent 55%), linear-gradient(to top, rgba(10,10,10,0.85) 0%, transparent 55%), linear-gradient(to right, rgba(10,10,10,0.4) 0%, transparent 40%); }
+        .hero-video-bg { position: absolute; inset: 0; z-index: 1; overflow: hidden; }
+        .hero-video-bg iframe { position: absolute; top: 50%; left: 50%; width: 177.78vh; min-width: 100%; height: 56.25vw; min-height: 100%; transform: translate(-50%, -50%); pointer-events: none; border: none; }
+        .hero-video-frame { position: absolute; inset: 0; z-index: 2; background: rgba(10,5,0,0.45), radial-gradient(ellipse at 70% 55%, rgba(20,8,0,0.35) 0%, transparent 55%), linear-gradient(to top, rgba(10,10,10,0.88) 0%, transparent 55%), linear-gradient(to right, rgba(10,10,10,0.45) 0%, transparent 45%); background: linear-gradient(to top, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.35) 40%, rgba(10,10,10,0.2) 100%); }
         .hero-noise { position: absolute; inset: 0; z-index: 2; opacity: 0.035; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); background-size: 180px; }
         .hero-property-tag { position: absolute; top: 52%; right: 72px; z-index: 5; background: rgba(10,10,10,0.65); backdrop-filter: blur(18px); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 18px 22px; min-width: 220px; animation: float 4s ease-in-out infinite; }
         @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
@@ -484,6 +486,14 @@ export default function Home() {
       {/* ── HERO ── */}
       <section className="hero">
         <div className="hero-bg" />
+        {/* ── Showreel background ── */}
+        <div className="hero-video-bg">
+          <iframe
+            src="https://www.youtube.com/embed/JfehKCUa5_g?autoplay=1&mute=1&loop=1&playlist=JfehKCUa5_g&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
+            allow="autoplay; fullscreen"
+            allowFullScreen
+          />
+        </div>
         <div className="hero-video-frame" />
         <div className="hero-noise" />
         <a href="#work" className="play-badge">

@@ -27,27 +27,177 @@ const REELS = [
     location: "Bhayli, Vadodara, Gujarat",
     thumb: "",
   },
-   {
+  {
     id: "2ITzNPUVo-E",
     title: "Space built for life",
     location: "Bhayli, Vadodara, Gujarat",
     thumb: "",
-  }
+  },
   {
     id: "sX04UHKuA9w",
     title: "Sapno ka aangan",
     location: "Makarpura, Vadodara, Gujarat",
     thumb: "",
-  }
-];;
+  },
+];
+
+// ─── Carousel Component ───────────────────────────────────────────────────────
+function ReelsCarousel({ reels }: { reels: typeof REELS }) {
+  const [current, setCurrent] = useState(0);
+  const [playingIdx, setPlayingIdx] = useState<number | null>(null);
+  const outerRef = useRef<HTMLDivElement>(null);
+  const [outerW, setOuterW] = useState(900);
+
+  useEffect(() => {
+    const update = () => {
+      if (outerRef.current) setOuterW(outerRef.current.offsetWidth);
+    };
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
+
+  const isMobile = outerW < 600;
+  const cW = isMobile ? 220 : 340;
+  const sW = isMobile ? 140 : 220;
+  const fW = isMobile ? 90 : 160;
+  const gap = 16;
+  const cH = isMobile ? 320 : 440;
+  const sH = isMobile ? 220 : 310;
+  const fH = isMobile ? 160 : 240;
+
+  const getLeft = (i: number) => {
+    const off = i - current;
+    const mid = outerW / 2;
+    if (off === 0)  return mid - cW / 2;
+    if (off === -1) return mid - cW / 2 - sW - gap;
+    if (off === 1)  return mid + cW / 2 + gap;
+    if (off === -2) return mid - cW / 2 - sW - gap - fW - gap;
+    if (off === 2)  return mid + cW / 2 + gap + sW + gap;
+    return off < 0 ? -500 : outerW + 300;
+  };
+
+  const getSize = (i: number) => {
+    const d = Math.abs(i - current);
+    if (d === 0) return { w: cW, h: cH, opacity: 1, scale: 1 };
+    if (d === 1) return { w: sW, h: sH, opacity: 0.55, scale: 0.94 };
+    return { w: fW, h: fH, opacity: 0.28, scale: 0.86 };
+  };
+
+  const go = (dir: number) => {
+    const next = current + dir;
+    if (next < 0 || next >= reels.length) return;
+    setCurrent(next);
+    setPlayingIdx(null);
+  };
+
+  return (
+    <>
+      <div className="carousel-outer" ref={outerRef}>
+        <div className="carousel-track" style={{ height: cH }}>
+          {reels.map((reel, i) => {
+            const { w, h, opacity } = getSize(i);
+            const left = getLeft(i);
+            const top = (cH - h) / 2;
+            const isCtr = i === current;
+            const isPlaying = playingIdx === i;
+
+            return (
+              <div
+                key={i}
+                className="reel-card"
+                style={{ left, top, width: w, height: h, opacity }}
+                onClick={() => {
+                  if (isCtr) setPlayingIdx(i);
+                  else { setCurrent(i); setPlayingIdx(null); }
+                }}
+              >
+                {isPlaying ? (
+                  <>
+                    <div className="reel-iframe-wrap">
+                      <iframe
+                        src={`https://www.youtube.com/embed/${reel.id}?autoplay=1&rel=0`}
+                        allow="autoplay; fullscreen"
+                        allowFullScreen
+                      />
+                    </div>
+                    <button
+                      className="reel-stop-btn"
+                      onClick={(e) => { e.stopPropagation(); setPlayingIdx(null); }}
+                    >
+                      ✕ Stop
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    {reel.thumb
+                      ? <img className="reel-thumb" src={reel.thumb} alt={reel.title} />
+                      : <div className="reel-placeholder" />
+                    }
+                    <div className="reel-overlay" />
+                    <div className="reel-play-btn">
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" style={{ marginLeft: 3 }}>
+                        <path d="M5 3L17 10L5 17V3Z" fill="white" />
+                      </svg>
+                    </div>
+                    {Math.abs(i - current) < 2 && (
+                      <div className="reel-info">
+                        <div className="reel-title">{reel.title}</div>
+                        <div className="reel-location">{reel.location}</div>
+                      </div>
+                    )}
+                  </>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Nav: arrows + dots */}
+      <div className="carousel-nav">
+        <button
+          className="carousel-arrow"
+          onClick={() => go(-1)}
+          disabled={current === 0}
+          aria-label="Previous"
+        >
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M10 3L5 8L10 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </button>
+
+        <div className="carousel-dots">
+          {reels.map((_, i) => (
+            <button
+              key={i}
+              className={`carousel-dot${i === current ? " active" : ""}`}
+              onClick={() => { setCurrent(i); setPlayingIdx(null); }}
+              aria-label={`Go to reel ${i + 1}`}
+            />
+          ))}
+        </div>
+
+        <button
+          className="carousel-arrow"
+          onClick={() => go(1)}
+          disabled={current === reels.length - 1}
+          aria-label="Next"
+        >
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M6 3L11 8L6 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </button>
+      </div>
+    </>
+  );
+}
+// ─────────────────────────────────────────────────────────────────────────────
 
 export default function Home() {
   const cursorRef = useRef<HTMLDivElement>(null);
   const ringRef = useRef<HTMLDivElement>(null);
   const navRef = useRef<HTMLElement>(null);
-
-  // index of the currently playing card, null = none playing
-  const [playing, setPlaying] = useState<number | null>(null);
 
   useEffect(() => {
     const onMouseMove = (e: MouseEvent) => {
@@ -188,76 +338,55 @@ export default function Home() {
         .package-card.featured .pkg-price span { color: rgba(255,255,255,0.6); }
 
         /* ═══════════════════════════════════════
-           REELS SECTION
+           REELS CAROUSEL
         ═══════════════════════════════════════ */
         .work-section { padding: 80px 48px 100px; background: var(--black); }
         .work-header { margin-bottom: 48px; }
         .work-header h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.8rem, 4.5vw, 4rem); letter-spacing: 0.02em; }
 
-        /* 3 equal columns matching the reference image */
-        .reels-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+        .carousel-outer { position: relative; overflow: hidden; }
+        .carousel-track { position: relative; width: 100%; }
 
         .reel-card {
-          position: relative;
+          position: absolute;
           border-radius: 20px;
           overflow: hidden;
           background: #1a1a1a;
           cursor: pointer;
-          border: none; outline: none;
-          aspect-ratio: 3 / 4;   /* tall portrait ratio like reference */
-          transition: transform 0.3s ease;
-        }
-        .reel-card:hover { transform: translateY(-4px); }
-        .reel-card:focus-visible { box-shadow: 0 0 0 3px var(--orange); }
-
-        /* Thumbnail — B&W by default, colour on hover */
-        .reel-thumb {
-          position: absolute; inset: 0; width: 100%; height: 100%;
-          object-fit: cover;
-          filter: grayscale(1) contrast(1.05) brightness(0.88);
-          transition: transform 0.55s cubic-bezier(0.25,0.46,0.45,0.94), filter 0.4s ease;
-        }
-        .reel-card:hover .reel-thumb { transform: scale(1.05); filter: grayscale(0) brightness(1); }
-
-        /* Dark placeholder when no thumbnail */
-        .reel-placeholder {
-          position: absolute; inset: 0;
-          background: linear-gradient(160deg, #252525 0%, #141414 100%);
+          transition: left 0.5s cubic-bezier(0.25,0.46,0.45,0.94),
+                      top 0.5s cubic-bezier(0.25,0.46,0.45,0.94),
+                      width 0.5s cubic-bezier(0.25,0.46,0.45,0.94),
+                      height 0.5s cubic-bezier(0.25,0.46,0.45,0.94),
+                      opacity 0.5s ease;
         }
 
-        /* Bottom gradient */
-        .reel-overlay {
-          position: absolute; inset: 0; z-index: 1;
-          background: linear-gradient(to top, rgba(5,5,5,0.92) 0%, rgba(5,5,5,0.25) 45%, transparent 72%);
-        }
+        .reel-placeholder { position: absolute; inset: 0; background: linear-gradient(160deg, #252525 0%, #141414 100%); }
+        .reel-overlay { position: absolute; inset: 0; z-index: 1; background: linear-gradient(to top, rgba(5,5,5,0.92) 0%, rgba(5,5,5,0.25) 45%, transparent 72%); }
 
-        /* Orange play button — always visible, pulses gently */
+        .reel-thumb { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) brightness(0.85); transition: filter 0.4s ease; }
+        .reel-card:hover .reel-thumb { filter: grayscale(0) brightness(1); }
+
         .reel-play-btn {
-          position: absolute; top: 50%; left: 50%;
-          transform: translate(-50%, -50%);
-          z-index: 2;
-          width: 62px; height: 62px; border-radius: 50%;
+          position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+          z-index: 2; width: 58px; height: 58px; border-radius: 50%;
           background: rgba(244,80,10,0.9);
           display: flex; align-items: center; justify-content: center;
           transition: transform 0.3s, background 0.3s;
           animation: reel-pulse 2.8s ease-in-out infinite;
         }
         @keyframes reel-pulse {
-          0%,100% { box-shadow: 0 0 0 0   rgba(244,80,10,0.4); }
-          50%      { box-shadow: 0 0 0 14px rgba(244,80,10,0);   }
+          0%,100% { box-shadow: 0 0 0 0 rgba(244,80,10,0.4); }
+          50%      { box-shadow: 0 0 0 14px rgba(244,80,10,0); }
         }
-        .reel-card:hover .reel-play-btn { transform: translate(-50%,-50%) scale(1.14); background: var(--orange-light); }
+        .reel-card:hover .reel-play-btn { transform: translate(-50%,-50%) scale(1.1); background: var(--orange-light); }
 
-        /* Title + location at the bottom */
-        .reel-info { position: absolute; bottom: 22px; left: 22px; right: 22px; z-index: 2; }
-        .reel-title { font-size: 1rem; font-weight: 600; color: var(--white); margin-bottom: 5px; line-height: 1.3; }
-        .reel-location { font-family: 'Space Mono', monospace; font-size: 0.6rem; color: rgba(255,255,255,0.5); letter-spacing: 0.1em; text-transform: uppercase; }
+        .reel-info { position: absolute; bottom: 20px; left: 20px; right: 20px; z-index: 2; }
+        .reel-title { font-size: 0.95rem; font-weight: 600; color: var(--white); margin-bottom: 5px; line-height: 1.3; }
+        .reel-location { font-family: 'Space Mono', monospace; font-size: 0.58rem; color: rgba(255,255,255,0.5); letter-spacing: 0.1em; text-transform: uppercase; }
 
-        /* Inline iframe — fills the card when playing */
         .reel-iframe-wrap { position: absolute; inset: 0; z-index: 3; background: #000; }
         .reel-iframe-wrap iframe { width: 100%; height: 100%; border: none; }
 
-        /* Small "✕ Stop" button shown while playing */
         .reel-stop-btn {
           position: absolute; top: 10px; right: 10px; z-index: 4;
           background: rgba(0,0,0,0.75); border: 1px solid rgba(255,255,255,0.2);
@@ -266,6 +395,24 @@ export default function Home() {
           font-family: 'DM Sans', sans-serif; transition: background 0.2s;
         }
         .reel-stop-btn:hover { background: rgba(244,80,10,0.85); }
+
+        /* Nav */
+        .carousel-nav { display: flex; align-items: center; justify-content: center; gap: 16px; margin-top: 32px; }
+        .carousel-arrow {
+          width: 44px; height: 44px; border-radius: 50%;
+          background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
+          color: rgba(255,255,255,0.8); display: flex; align-items: center; justify-content: center;
+          cursor: pointer; transition: background 0.2s, border-color 0.2s; flex-shrink: 0;
+        }
+        .carousel-arrow:hover:not(:disabled) { background: var(--orange); border-color: var(--orange); }
+        .carousel-arrow:disabled { opacity: 0.2; cursor: default; }
+        .carousel-dots { display: flex; gap: 8px; align-items: center; }
+        .carousel-dot {
+          width: 6px; height: 6px; border-radius: 50%;
+          background: rgba(255,255,255,0.2); border: none; padding: 0;
+          cursor: pointer; transition: background 0.25s, transform 0.25s;
+        }
+        .carousel-dot.active { background: var(--orange); transform: scale(1.5); }
 
         /* ═══════════════════════════════════════
            FOOTER
@@ -303,7 +450,6 @@ export default function Home() {
           .about-section { grid-template-columns: 1fr; padding: 60px 24px; gap: 36px; }
           .packages-section { padding: 60px 24px; } .packages-grid { grid-template-columns: 1fr; }
           .work-section { padding: 60px 24px; }
-          .reels-grid { grid-template-columns: 1fr; }
           footer { padding: 48px 24px 32px; } .footer-top { flex-direction: column; gap: 36px; } .footer-links { gap: 36px; }
         }
       `}</style>
@@ -438,66 +584,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ══════════════════════════════════════════
-          REELS SECTION
-          Cards are B&W, play inline on click,
-          no redirect, no popup
-      ══════════════════════════════════════════ */}
+      {/* ── REELS CAROUSEL ── */}
       <section className="work-section" id="work">
         <div className="work-header reveal">
           <div className="section-eyebrow">Selected Work</div>
           <h2>Recent Reels</h2>
         </div>
-
-        <div className="reels-grid">
-          {REELS.map((reel, i) => (
-            <div
-              key={i}
-              className={`reel-card reveal${i > 0 ? ` reveal-d${i}` : ""}`}
-              onClick={() => playing !== i && setPlaying(i)}
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => e.key === "Enter" && setPlaying(i)}
-            >
-              {playing === i ? (
-                /* ── PLAYING STATE: iframe fills the card ── */
-                <>
-                  <div className="reel-iframe-wrap">
-                    <iframe
-                      src={`https://www.youtube.com/embed/${reel.id}?autoplay=1&rel=0`}
-                      allow="autoplay; fullscreen"
-                      allowFullScreen
-                    />
-                  </div>
-                  <button
-                    className="reel-stop-btn"
-                    onClick={(e) => { e.stopPropagation(); setPlaying(null); }}
-                  >
-                    ✕ Stop
-                  </button>
-                </>
-              ) : (
-                /* ── IDLE STATE: thumbnail + play button ── */
-                <>
-                  {reel.thumb
-                    ? <img className="reel-thumb" src={reel.thumb} alt={reel.title} />
-                    : <div className="reel-placeholder" />
-                  }
-                  <div className="reel-overlay" />
-                  <div className="reel-play-btn">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style={{marginLeft: 3}}>
-                      <path d="M5 3L17 10L5 17V3Z" fill="white"/>
-                    </svg>
-                  </div>
-                  <div className="reel-info">
-                    <div className="reel-title">{reel.title}</div>
-                    <div className="reel-location">{reel.location}</div>
-                  </div>
-                </>
-              )}
-            </div>
-          ))}
-        </div>
+        <ReelsCarousel reels={REELS} />
       </section>
 
       {/* ── FOOTER ── */}

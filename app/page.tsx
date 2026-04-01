@@ -1,34 +1,93 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 
 const REELS = [
-  { id: "YOUTUBE_ID", title: "Video Name", location: "City, Gujarat", thumb: "" },
-  {
-    id: "h3Vuti6l1ZQ",
-    title: "What inside ratnam parkview",
-    location: "Bhayli, Vadodara, Gujarat",
-    thumb: "",
-  },
-  {
-    id: "MW4mKin0i0k",
-    title: "Empty plot to building",
-    location: "Bhayli, Vadodara, Gujarat",
-    thumb: "",
-  },
-  {
-    id: "ykh3nF0G7dI",
-    title: "Ratnam Group ka Track Record",
-    location: "Makarpura, Vadodara, Gujarat",
-    thumb: "",
-  },
-  {
-    id: "ykh3nF0G7dI",
-    title: "Ratnam Group ka Track Record",
-    location: "Makarpura, Vadodara, Gujarat",
-    thumb: "",
-  },
-];;
+  { id: "h3Vuti6l1ZQ", title: "What inside ratnam parkview", location: "Bhayli, Vadodara", thumb: "" },
+  { id: "MW4mKin0i0k", title: "Empty plot to building", location: "Bhayli, Vadodara", thumb: "" },
+  { id: "ykh3nF0G7dI", title: "Ratnam Group Track Record", location: "Makarpura, Vadodara", thumb: "" },
+  { id: "h3Vuti6l1ZQ", title: "Video 4 Example", location: "Vadodara, Gujarat", thumb: "" },
+  { id: "MW4mKin0i0k", title: "Video 5 Example", location: "Vadodara, Gujarat", thumb: "" },
+  { id: "ykh3nF0G7dI", title: "Video 6 Example", location: "Vadodara, Gujarat", thumb: "" },
+];
+
+export default function VideoCarousel() {
+  const [currentPage, setCurrentPage] = useState(0);
+  const itemsPerPage = 3;
+  const totalPages = Math.ceil(REELS.length / itemsPerPage);
+
+  const nextPage = () => {
+    setCurrentPage((prev) => (prev + 1) % totalPages);
+  };
+
+  const prevPage = () => {
+    setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages);
+  };
+
+  return (
+    <div className="max-w-6xl mx-auto py-10 px-4">
+      {/* Header with Navigation */}
+      <div className="flex justify-between items-center mb-6">
+        <h2 className="text-2xl font-bold">Latest Reels</h2>
+        <div className="flex gap-2">
+          <button 
+            onClick={prevPage}
+            className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition"
+          >
+            ←
+          </button>
+          <button 
+            onClick={nextPage}
+            className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition"
+          >
+            →
+          </button>
+        </div>
+      </div>
+
+      {/* Carousel Container */}
+      <div className="relative overflow-hidden">
+        <div 
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{ transform: `translateX(-${currentPage * 100}%)` }}
+        >
+          {/* We group the reels into "pages" */}
+          {Array.from({ length: totalPages }).map((_, pageIndex) => (
+            <div key={pageIndex} className="flex min-w-full gap-4">
+              {REELS.slice(pageIndex * itemsPerPage, (pageIndex + 1) * itemsPerPage).map((video) => (
+                <div key={video.id} className="flex-1 min-w-[30%] bg-black rounded-xl aspect-[9/16] overflow-hidden relative group">
+                  <iframe
+                    className="w-full h-full"
+                    src={`https://www.youtube.com/embed/${video.id}`}
+                    title={video.title}
+                    allowFullScreen
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent text-white">
+                    <p className="font-bold text-sm">{video.title}</p>
+                    <p className="text-xs opacity-80">{video.location}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Pagination Dots */}
+      <div className="flex justify-center gap-2 mt-6">
+        {Array.from({ length: totalPages }).map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrentPage(i)}
+            className={`h-2 w-2 rounded-full transition-all ${
+              currentPage === i ? "bg-blue-600 w-4" : "bg-gray-300"
+            }`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function Home() {
   const cursorRef = useRef<HTMLDivElement>(null);

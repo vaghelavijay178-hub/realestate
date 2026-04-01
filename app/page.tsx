@@ -585,22 +585,15 @@ export default function Home() {
           </div>
           <div className="footer-links">
             <div className="footer-col">
-              <h4>Services</h4>
-              <a href="#">Drone Aerials</a>
-              <a href="#">Walkthrough Reels</a>
-              <a href="#">Social Cuts</a>
-              <a href="#">Twilight Shoots</a>
-            </div>
-            <div className="footer-col">
               <h4>Contact</h4>
-              <a href="#">hello@frameshot.in</a>
-              <a href="#">+91 98765 43210</a>
-              <a href="#">Vadodara, Gujarat</a>
+              <a href="mailto:vaghelavijay178@mail.com">vaghelavijay178@mail.com</a>
+              <a href="https://wa.me/919586239648">+91 95862 39648</a>
+              <a href="#">Karjan, Vadodara, Gujarat</a>
             </div>
           </div>
         </div>
         <div className="footer-bottom">
-          <div className="footer-copy">© 2025 VijayVaghela. All rights reserved.</div>
+          <div className="footer-copy">© 2026 VijayVaghela. All rights reserved.</div>
           <div className="footer-socials">
             <a href="https://www.instagram.com/vijaycreates/" target="_blank" rel="noopener noreferrer" className="social-btn">IG</a>
             <a href="https://www.linkedin.com/in/vijayvaghelain/" target="_blank" rel="noopener noreferrer" className="social-btn">LD</a>

@@ -28,6 +28,12 @@ const REELS = [
     location: "Bhayli, Vadodara, Gujarat",
     thumb: "",
   },
+   {
+    id: "2ITzNPUVo-E",
+    title: "Space built for life",
+    location: "Bhayli, Vadodara, Gujarat",
+    thumb: "",
+  }
 ];;
 
 export default function Home() {

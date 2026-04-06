@@ -490,16 +490,8 @@ export default function Home() {
 
       {/* ── HERO ── */}
       <section className="hero">
-        <div className="hero-bg" />
+      <div className="hero-bg" />
         <div className="hero-glow" />
-        {/* ── Showreel background ── */}
-        <div className="hero-video-bg">
-          <iframe
-            src="https://www.youtube.com/embed/JfehKCUa5_g?autoplay=1&mute=1&loop=1&playlist=JfehKCUa5_g&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
-            allow="autoplay; fullscreen"
-            allowFullScreen
-          />
-        </div>
         <div className="hero-video-frame" />
         <div className="hero-noise" />
         <div className="hero-content">

@@ -544,7 +544,7 @@ export default function Home() {
             <div className="pkg-name">Essential</div>
             <div className="pkg-tagline">Get seen. Get remembered.</div>
             <ul className="pkg-features">
-              <li><a href="https://www.instagram.com/_k.elsie/?hl=en" target="_blank" rel="noopener noreferrer">P2C property introduction reel</a></li>
+              <li><a href="https://www.instagram.com/p/DP3zzcggF9G/?hl=en" target="_blank" rel="noopener noreferrer">P2C property introduction reel</a></li>
               <li><a href="https://www.instagram.com/reel/DV_L5UcDFYj/?hl=en" target="_blank" rel="noopener noreferrer">VO amenities highlight reel</a></li>
               <li><a href="https://www.instagram.com/reel/DWRKqskoVyG/?hl=en" target="_blank" rel="noopener noreferrer">Scroll-stopping eye-catching reel</a></li>
             </ul>

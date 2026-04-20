@@ -539,6 +539,8 @@ export default function Home() {
               <li><a href="https://www.instagram.com/p/DP3zzcggF9G/?hl=en" target="_blank" rel="noopener noreferrer">P2C property introduction reel</a></li>
               <li><a href="https://www.instagram.com/reel/DV_L5UcDFYj/?hl=en" target="_blank" rel="noopener noreferrer">VO amenities highlight reel</a></li>
               <li><a href="https://www.instagram.com/reel/DWRKqskoVyG/?hl=en" target="_blank" rel="noopener noreferrer">Scroll-stopping eye-catching reel</a></li>
+               <li><a href="" target="_blank" rel="noopener noreferrer">Instagram stories set of 3</a></li>
+             <li><a href="" target="_blank" rel="noopener noreferrer">15 sec ad teaser cut</a></li>
             </ul>
             <div className="pkg-price">₹75,000 <span>/ 3 deliverables</span></div>
           </div>

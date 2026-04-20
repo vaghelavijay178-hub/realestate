@@ -542,7 +542,7 @@ export default function Home() {
                <li><a href="" target="_blank" rel="noopener noreferrer">Instagram stories set of 3</a></li>
              <li><a href="" target="_blank" rel="noopener noreferrer">15 sec ad teaser cut</a></li>
             </ul>
-            <div className="pkg-price">₹75,000 <span>/ 3 deliverables</span></div>
+            <div className="pkg-price">₹75,000 <span>/ 5 deliverables</span></div>
           </div>
           <div className="package-card featured reveal reveal-d1">
             <div className="pkg-num">#02</div>
@@ -553,7 +553,7 @@ export default function Home() {
               <li><a href="https://www.instagram.com/reel/DVJA78aDdfH/?hl=en" target="_blank" rel="noopener noreferrer">Location benefits reel</a></li>
               <li><a href="https://www.google.com/search?q=instagram+carousel+post+real+estate+marketing" target="_blank" rel="noopener noreferrer">Carousel post + 2 Instagram story images</a></li>
             </ul>
-            <div className="pkg-price">₹1,10,000 <span>/ 5 deliverables</span></div>
+            <div className="pkg-price">₹1,10,000 <span>/ 7 deliverables</span></div>
           </div>
           <div className="package-card reveal reveal-d2">
             <div className="pkg-num">#03</div>
@@ -563,7 +563,7 @@ export default function Home() {
               <li><a href="https://www.google.com/search?q=P2C+property+introduction+reel+real+estate" target="_blank" rel="noopener noreferrer">Everything in The Essential and Signature</a></li>
               <li><a href="https://www.google.com/search?q=cinematic+property+walkthrough+film+real+estate" target="_blank" rel="noopener noreferrer">Cinematic property walk-through film</a></li>
             </ul>
-            <div className="pkg-price">₹1,75,000 <span>/ 6 deliverables</span></div>
+            <div className="pkg-price">₹1,75,000 <span>/ 8 deliverables</span></div>
           </div>
         </div>
       </section>

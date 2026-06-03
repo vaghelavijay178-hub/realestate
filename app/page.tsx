@@ -349,8 +349,6 @@ export default function Home() {
         .hero { position: relative; min-height: 100vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 0 48px 60px; overflow: hidden; border-radius: 0 0 32px 32px; }
         .hero-bg { position: absolute; inset: 0; background: #0a0a0a; z-index: 0; }
         .hero-glow { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80%; height: 55%; z-index: 1; background: radial-gradient(ellipse at 50% 100%, rgba(244,80,10,0.75) 0%, rgba(180,40,0,0.45) 35%, rgba(80,10,0,0.2) 65%, transparent 100%); filter: blur(32px); pointer-events: none; }
-        .hero-video-bg { position: absolute; inset: 0; z-index: 2; overflow: hidden; }
-        .hero-video-bg iframe { position: absolute; top: 50%; left: 50%; width: 177.78vh; min-width: 100%; height: 56.25vw; min-height: 100%; transform: translate(-50%, -50%); pointer-events: none; border: none; }
         .hero-video-frame { position: absolute; inset: 0; z-index: 3; background: linear-gradient(to top, rgba(10,10,10,0.88) 0%, rgba(10,5,0,0.3) 45%, rgba(0,0,0,0.15) 100%); }
         .hero-noise { position: absolute; inset: 0; z-index: 4; opacity: 0.035; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); background-size: 180px; pointer-events: none; }
         .hero-content { position: relative; z-index: 5; }
@@ -505,7 +503,6 @@ export default function Home() {
         @media (max-width: 768px) {
           nav { padding: 18px 24px; } .nav-links { display: none; }
           .hero { padding: 0 24px 48px; }
-          .hero-video-bg iframe { width: 300vw; min-width: 300vw; height: 169vw; min-height: 56.25vw; }
           .about-section { grid-template-columns: 1fr; padding: 60px 24px; gap: 36px; }
           .why-strip { grid-template-columns: 1fr; padding: 48px 24px; gap: 36px; }
           .packages-section { padding: 60px 24px; } .packages-grid { grid-template-columns: 1fr; }
@@ -554,13 +551,6 @@ export default function Home() {
       <section className="hero">
         <div className="hero-bg" />
         <div className="hero-glow" />
-        <div className="hero-video-bg">
-          <iframe
-            src="https://www.youtube.com/embed/JfehKCUa5_g?autoplay=1&mute=1&loop=1&playlist=JfehKCUa5_g&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
-            allow="autoplay; fullscreen"
-            allowFullScreen
-          />
-        </div>
         <div className="hero-video-frame" />
         <div className="hero-noise" />
         <div className="hero-content">

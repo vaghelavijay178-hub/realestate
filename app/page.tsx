@@ -665,15 +665,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── TESTIMONIAL / CREDIBILITY ── */}
-      <div className="testi-strip reveal">
-        <div className="testi-quote">"</div>
-        <div>
-          <p className="testi-text">Concept created for Indumati Palace Residences — a cinematic property film that positioned the project as a premium lifestyle destination, not just another apartment complex.</p>
-          <div className="testi-credit">— Indumati Palace Residences, Vadodara</div>
-        </div>
-      </div>
-
       {/* ── REELS CAROUSEL ── */}
       <section className="work-section" id="work">
         <div className="work-header reveal">

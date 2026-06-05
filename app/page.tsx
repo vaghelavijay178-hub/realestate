@@ -210,14 +210,13 @@ function ReelsCarousel({ reels }: { reels: typeof REELS }) {
                       </svg>
                     </div>
                     {Math.abs(i - current) < 2 && (
-                      <div className="reel-info">
+                      <div className="reel-info" onClick={(e) => e.stopPropagation()}>
                         <div className="reel-type-tag">{reel.type}</div>
                         <a
                           className="reel-title"
                           href={reel.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          onClick={(e) => e.stopPropagation()}
                         >
                           {reel.title} ↗
                         </a>
@@ -664,6 +663,15 @@ export default function Home() {
 
         </div>
       </section>
+
+      {/* ── TESTIMONIAL / CREDIBILITY ── */}
+      <div className="testi-strip reveal">
+        <div className="testi-quote">"</div>
+        <div>
+          <p className="testi-text">Concept created for Indumati Palace Residences — a cinematic property film that positioned the project as a premium lifestyle destination, not just another apartment complex.</p>
+          <div className="testi-credit">— Indumati Palace Residences, Vadodara</div>
+        </div>
+      </div>
 
       {/* ── REELS CAROUSEL ── */}
       <section className="work-section" id="work">

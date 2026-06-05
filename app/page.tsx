@@ -621,12 +621,12 @@ export default function Home() {
             <div className="pkg-name">Spotlight</div>
             <div className="pkg-tagline">Get seen. Get remembered.</div>
             <ul className="pkg-features">
-              <li><a href="https://www.instagram.com/reel/DXEiuCDD_qT/?hl=en" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>Property introduction video (AI-powered, cinematic storytelling)</a></li>
+              <li><a href="https://www.instagram.com/reel/DXEiuCDD_qT/?hl=en" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>Property introduction video</a></li>
               <li><a href="https://www.instagram.com/p/DJ8kbOVoZ2B/?hl=en" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>property walkthrough reel</a></li>
               <li><a href="https://www.instagram.com/p/DP3zzcggF9G/?hl=en" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>Location benefits reel</a></li>
-              <li>2 Instagram story designs</li>
+              <li>2 Instagram premium story designs</li>
             </ul>
-            <div className="pkg-best-for">Best for: Small builders, single-project developers, first-time clients — 5 deliverables</div>
+            <div className="pkg-best-for">Best for: Small builders, single-project developers, first-time clients — 4 deliverables</div>
             <div className="pkg-price">₹55,000 <span>/ 5 deliverables</span></div>
             <button className="pkg-cta" onClick={() => setOrderPkg("Spotlight — ₹55,000")}>Choose Spotlight →</button>
           </div>
@@ -638,10 +638,10 @@ export default function Home() {
             <div className="pkg-tagline">Convert attention into trust.</div>
             <ul className="pkg-features">
               <li>Everything in Spotlight</li>
-              <li>1 Carousel post design (3–5 slides)</li>
+              <li>1 Premium carousel post design (3–5 slides)</li>
               <li><a href="https://www.instagram.com/reel/DXHArrTkVBs/" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>90-sec cinematic engaging reel</a></li>
+              <li>Up to 10 Clean edited photos</li>
             </ul>
-            <li>Up to 10 Clean edited photos</li>
             <div className="pkg-best-for">Best for: Mid-size developers, active projects, retainer potential — 7 deliverables</div>
             <div className="pkg-price">₹95,000 <span>/ 7 deliverables</span></div>
             <button className="pkg-cta" onClick={() => setOrderPkg("Signature — ₹95,000")}>Choose Signature →</button>
@@ -654,27 +654,18 @@ export default function Home() {
             <div className="pkg-tagline">The film that defines the project.</div>
             <ul className="pkg-features">
               <li>Everything in Signature</li>
-              <li><a href="https://www.youtube.com/watch?v=FRDX4qrSdr4" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>Up to 3-min cinematic property film (full cinematic production)</a></li>
+              <li><a href="https://www.youtube.com/watch?v=FRDX4qrSdr4" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>Up to 3-min cinematic property film</a></li>
               <li>1 Additional carousel or story set</li>
               <li>Up to 25 Clean edited photos</li>
               <li>Free raw photos</li>
             </ul>
             <div className="pkg-best-for">Best for: Premium developers, luxury projects, established brands — 9 deliverables</div>
-            <div className="pkg-price">₹1,50,000 <span>/ 9 deliverables</span></div>
+            <div className="pkg-price">₹1,50,000 <span>/ 10 deliverables</span></div>
             <button className="pkg-cta" onClick={() => setOrderPkg("Prestige — ₹1,50,000")}>Choose Prestige →</button>
           </div>
 
         </div>
       </section>
-
-      {/* ── TESTIMONIAL / CREDIBILITY ── */}
-      <div className="testi-strip reveal">
-        <div className="testi-quote">"</div>
-        <div>
-          <p className="testi-text">Concept created for Indumati Palace Residences — a cinematic property film that positioned the project as a premium lifestyle destination, not just another apartment complex.</p>
-          <div className="testi-credit">— Indumati Palace Residences, Vadodara</div>
-        </div>
-      </div>
 
       {/* ── REELS CAROUSEL ── */}
       <section className="work-section" id="work">

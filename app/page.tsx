@@ -653,7 +653,7 @@ export default function Home() {
             <div className="pkg-tagline">The film that defines the project.</div>
             <ul className="pkg-features">
               <li>Everything in Signature</li>
-              <li>Up to 3-min cinematic property film (full cinematic production)</li>
+              <li><a href="https://www.youtube.com/watch?v=FRDX4qrSdr4" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>Up to 3-min cinematic property film (full cinematic production)</a></li>
               <li>1 Additional carousel or story set</li>
             </ul>
             <div className="pkg-best-for">Best for: Premium developers, luxury projects, established brands — 9 deliverables</div>

@@ -639,7 +639,7 @@ export default function Home() {
             <ul className="pkg-features">
               <li>Everything in Spotlight</li>
               <li>1 Carousel post design (3–5 slides)</li>
-              <li>1 × 90-sec cinematic engaging reel</li>
+              <li><a href="https://www.instagram.com/reel/DXHArrTkVBs/" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>90-sec cinematic engaging reel</a></li>
             </ul>
             <div className="pkg-best-for">Best for: Mid-size developers, active projects, retainer potential — 7 deliverables</div>
             <div className="pkg-price">₹95,000 <span>/ 7 deliverables</span></div>

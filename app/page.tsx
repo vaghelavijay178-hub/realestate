@@ -596,7 +596,7 @@ export default function Home() {
           <h2>Gujarat&apos;s First AI-Powered Real Estate Video Specialist</h2>
         </div>
         <div className="about-right reveal reveal-d2">
-          <p>Welcome to Lumiq Productions, the place where eye-catching images come to life. Our company specializes in producing captivating and inspiring images. We bring passion and enthusiasm to every project with a warm and approachable attitude, making it an unforgettable experience for everyone. Our passion is creating eye-catching visuals that have a lasting impact on your brand, professional goals, or personal journey. Together, let's use the power of AI-enhanced editing and outstanding videography to bring your vision to life..</p>
+          <p>Welcome to Lumiq Productions, the place where eye-catching images come to life. Our company specializes in producing captivating and inspiring images. We bring passion and enthusiasm to every project with a warm and approachable attitude, making it an unforgettable experience for everyone. Our passion is creating eye-catching visuals that have a lasting impact on your brand, professional goals, or personal journey. Together, let's use the power of AI-enhanced editing and outstanding videography to bring your vision to life.</p>
             <a href="#work" className="btn-primary">
               Explore Work
               <span className="arrow-dot">

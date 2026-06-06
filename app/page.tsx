@@ -648,9 +648,9 @@ export default function Home() {
             <div className="pkg-name">Spotlight</div>
             <div className="pkg-tagline">Get seen. Get remembered.</div>
             <ul className="pkg-features">
-              <li><a href="https://www.instagram.com/reel/DXEiuCDD_qT/?hl=en" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>Property introduction video</a></li>
+              <li><a href="https://www.instagram.com/p/DP3zzcggF9G/?hl=en" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>Property introduction video(Talk with a vertical steady camera)</a></li>
               <li><a href="https://www.instagram.com/p/DJ8kbOVoZ2B/?hl=en" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>property walkthrough reel</a></li>
-              <li><a href="https://www.instagram.com/p/DP3zzcggF9G/?hl=en" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>Location benefits reel</a></li>
+              <li><a href="https://www.instagram.com/reel/DRmX1pDEXTR/" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>Location benefits reel</a></li>
               <li>2 Instagram premium story designs</li>
               <li>3 Strategic and purpose-driven scrips</li>
             </ul>
@@ -666,7 +666,7 @@ export default function Home() {
             <ul className="pkg-features">
               <li>Everything in Spotlight</li>
               <li>1 Premium carousel post design (3–5 slides)</li>
-              <li><a href="https://www.instagram.com/reel/DXHArrTkVBs/" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>90-sec cinematic engaging reel</a></li>
+              <li><a href="https://www.instagram.com/reel/DXHArrTkVBs/" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>90-sec cinematic engaging reel(vertical)</a></li>
               <li>Up to 10 Clean edited photos</li>
             </ul>
             <div className="pkg-price">₹95,000 <span>/ 8 deliverables</span></div>

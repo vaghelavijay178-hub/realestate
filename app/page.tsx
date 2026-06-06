@@ -333,8 +333,7 @@ export default function Home() {
   28%  { opacity: 1; transform: translateY(0); }
   36%  { opacity: 0; transform: translateY(-40px); }
   100% { opacity: 0; transform: translateY(-40px); }
-}        
-         `}</style>
+ `}</style>
         {`
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
         :root {

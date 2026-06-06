@@ -592,15 +592,13 @@ export default function Home() {
       {/* ── ABOUT ── */}
       <section className="about-section" id="about">
         <div className="about-left reveal">
-          <div className="section-eyebrow">Who I am</div>
+          <div className="section-eyebrow">ABOUT LUMIQ PRODUCTIONS</div>
           <h2>Gujarat&apos;s First AI-Powered Real Estate Video Specialist</h2>
         </div>
         <div className="about-right reveal reveal-d2">
-          <p>Welcome to Lumiq Productions, the place where eye-catching images come to life. Our committed team of videographers, based in Karjan, Gujarat, India, specializes in producing captivating and inspiring images. We bring passion and enthusiasm to every project with a warm and approachable behavior, making it an unforgettable experience for everyone. Our passion is creating eye-catching images that have a lasting impact on your brand, professional goals, or personal journey. Together, let's use the power of AI-enhanced editing and outstanding videography to bring your vision to life..</p>
-          <p>Using AI-enhanced editing, professional colour grading, and real estate-specific storytelling, I help buyers <strong>feel</strong> the project before they ever visit the site. The result: faster inquiries, stronger first impressions, and properties that sell at the value they deserve.</p>
-          <div className="cta-row">
+          <p>Welcome to Lumiq Productions, the place where eye-catching images come to life. Our company specializes in producing captivating and inspiring images. We bring passion and enthusiasm to every project with a warm and approachable attitude, making it an unforgettable experience for everyone. Our passion is creating eye-catching visuals that have a lasting impact on your brand, professional goals, or personal journey. Together, let's use the power of AI-enhanced editing and outstanding videography to bring your vision to life..</p>
             <a href="#work" className="btn-primary">
-              Explore My Work
+              Explore Work
               <span className="arrow-dot">
                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
                   <path d="M1.5 6.5H11.5M11.5 6.5L7 2M11.5 6.5L7 11" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -615,8 +613,8 @@ export default function Home() {
       {/* ── WHY REALTORS-STYLE STRIP ── */}
       <div className="why-strip reveal">
         <div className="why-strip-left">
-          <h3>Why <em>AI-Powered Cinematic</em><br/>films for Gujarat?</h3>
-          <p>The AI-powered cinematic film trend — storytelling blended with lifestyle visuals — is transforming property marketing globally. Gujarat&apos;s real estate market is ready for it.</p>
+          <h3>Why <em>AI-Powered Cinematic</em><br/>films?</h3>
+          <p>The AI-powered cinematic film helps viewers to experience their lifestyle through what they are looking at. Gujarat&apos;s real estate market is ready for it.</p>
         </div>
         <div className="why-strip-right">
           {[
@@ -655,9 +653,8 @@ export default function Home() {
               <li><a href="https://www.instagram.com/p/DJ8kbOVoZ2B/?hl=en" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>property walkthrough reel</a></li>
               <li><a href="https://www.instagram.com/p/DP3zzcggF9G/?hl=en" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>Location benefits reel</a></li>
               <li>2 Instagram premium story designs</li>
-              <li>2 Strategic and purpose-driven scripting</li>
+              <li>3 Strategic and purpose-driven scrips</li>
             </ul>
-            <div className="pkg-best-for">Best for: Small builders, single-project developers, first-time clients — 4 deliverables</div>
             <div className="pkg-price">₹55,000 <span>/ 5 deliverables</span></div>
             <button className="pkg-cta" onClick={() => setOrderPkg("Spotlight — ₹55,000")}>Choose Spotlight →</button>
           </div>
@@ -673,7 +670,6 @@ export default function Home() {
               <li><a href="https://www.instagram.com/reel/DXHArrTkVBs/" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>90-sec cinematic engaging reel</a></li>
               <li>Up to 10 Clean edited photos</li>
             </ul>
-            <div className="pkg-best-for">Best for: Mid-size developers, active projects, retainer potential — 7 deliverables</div>
             <div className="pkg-price">₹95,000 <span>/ 8 deliverables</span></div>
             <button className="pkg-cta" onClick={() => setOrderPkg("Signature — ₹95,000")}>Choose Signature →</button>
           </div>
@@ -690,7 +686,6 @@ export default function Home() {
               <li>Up to 25 Clean edited photos</li>
               <li>Free raw photos</li>
             </ul>
-            <div className="pkg-best-for">Best for: Premium developers, luxury projects, established brands — 11 deliverables</div>
             <div className="pkg-price">₹1,50,000 <span>/ 12 deliverables</span></div>
             <button className="pkg-cta" onClick={() => setOrderPkg("Prestige — ₹1,50,000")}>Choose Prestige →</button>
           </div>

@@ -320,8 +320,6 @@ export default function Home() {
   return (
     <>
       <style>{`
-       
-        {`
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
           --orange: #F4500A; --orange-light: #FF6B2B;

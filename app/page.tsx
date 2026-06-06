@@ -546,7 +546,7 @@ export default function Home() {
       {/* ── NAV ── */}
       <nav ref={navRef}>
         <a href="#" className="nav-logo">
-  <img src="/logo.png" alt="Vijay Vaghela" style={{ height: "36px", width: "auto", objectFit: "contain" }} />
+  <img src="/logo.png" alt="Vijay Vaghela" style={{ height: "82px", width: "auto", objectFit: "contain" }} />
 </a>
         <div className="nav-links">
           <a href="#about">About</a>

@@ -607,7 +607,6 @@ export default function Home() {
             </a>
             <div className="cta-subtext">Based in Vadodara.<br/>Serving Gujarat&apos;s top developers.</div>
           </div>
-        </div>
       </section>
 
       {/* ── WHY REALTORS-STYLE STRIP ── */}

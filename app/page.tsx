@@ -319,22 +319,8 @@ export default function Home() {
 
   return (
     <>
-      <style>
-        /* ── WORD CYCLE ANIMATION ── */
-.cycle-strip { padding: 48px; background: var(--black); display: flex; align-items: center; justify-content: center; overflow: hidden; border-bottom: 1px solid var(--gray); }
-.cycle-text { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2rem, 5vw, 4rem); letter-spacing: 0.08em; color: rgba(255,255,255,0.75); display: flex; align-items: center; gap: 24px; }
-.cycle-word-wrap { position: relative; height: 1.1em; overflow: hidden; min-width: 320px; display: flex; align-items: center; justify-content: center; }
-.cycle-word { position: absolute; color: var(--orange); opacity: 0; transform: translateY(40px); animation: wordCycle 6s ease-in-out infinite; }
-.cycle-word:nth-child(2) { animation-delay: 2s; }
-.cycle-word:nth-child(3) { animation-delay: 4s; }
-@keyframes wordCycle {
-  0%   { opacity: 0; transform: translateY(40px); }
-  8%   { opacity: 1; transform: translateY(0); }
-  28%  { opacity: 1; transform: translateY(0); }
-  36%  { opacity: 0; transform: translateY(-40px); }
-  100% { opacity: 0; transform: translateY(-40px); } 
-        }
-        `}</style>
+      <style>{`
+       
         {`
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
@@ -526,6 +512,21 @@ export default function Home() {
           .urgency-strip { flex-direction: column; padding: 40px 24px; text-align: center; }
           footer { padding: 48px 24px 32px; } .footer-top { flex-direction: column; gap: 36px; } .footer-links { gap: 36px; }
           .modal-box { padding: 32px 24px; }
+        }
+
+         /* ── WORD CYCLE ANIMATION ── */
+.cycle-strip { padding: 48px; background: var(--black); display: flex; align-items: center; justify-content: center; overflow: hidden; border-bottom: 1px solid var(--gray); }
+.cycle-text { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2rem, 5vw, 4rem); letter-spacing: 0.08em; color: rgba(255,255,255,0.75); display: flex; align-items: center; gap: 24px; }
+.cycle-word-wrap { position: relative; height: 1.1em; overflow: hidden; min-width: 320px; display: flex; align-items: center; justify-content: center; }
+.cycle-word { position: absolute; color: var(--orange); opacity: 0; transform: translateY(40px); animation: wordCycle 6s ease-in-out infinite; }
+.cycle-word:nth-child(2) { animation-delay: 2s; }
+.cycle-word:nth-child(3) { animation-delay: 4s; }
+@keyframes wordCycle {
+  0%   { opacity: 0; transform: translateY(40px); }
+  8%   { opacity: 1; transform: translateY(0); }
+  28%  { opacity: 1; transform: translateY(0); }
+  36%  { opacity: 0; transform: translateY(-40px); }
+  100% { opacity: 0; transform: translateY(-40px); } 
         }
       `}</style>
 

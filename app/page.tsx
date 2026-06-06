@@ -319,7 +319,22 @@ export default function Home() {
 
   return (
     <>
-      <style>{`
+      <style>
+        /* ── WORD CYCLE ANIMATION ── */
+.cycle-strip { padding: 48px; background: var(--black); display: flex; align-items: center; justify-content: center; overflow: hidden; border-bottom: 1px solid var(--gray); }
+.cycle-text { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2rem, 5vw, 4rem); letter-spacing: 0.08em; color: rgba(255,255,255,0.75); display: flex; align-items: center; gap: 24px; }
+.cycle-word-wrap { position: relative; height: 1.1em; overflow: hidden; min-width: 320px; display: flex; align-items: center; justify-content: center; }
+.cycle-word { position: absolute; color: var(--orange); opacity: 0; transform: translateY(40px); animation: wordCycle 6s ease-in-out infinite; }
+.cycle-word:nth-child(2) { animation-delay: 2s; }
+.cycle-word:nth-child(3) { animation-delay: 4s; }
+@keyframes wordCycle {
+  0%   { opacity: 0; transform: translateY(40px); }
+  8%   { opacity: 1; transform: translateY(0); }
+  28%  { opacity: 1; transform: translateY(0); }
+  36%  { opacity: 0; transform: translateY(-40px); }
+  100% { opacity: 0; transform: translateY(-40px); }
+}        
+        {`
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
           --orange: #F4500A; --orange-light: #FF6B2B;
@@ -519,7 +534,7 @@ export default function Home() {
       <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 
       {/* Page title */}
-      <title>Vijay Vaghela — AI-Powered Real Estate Visuals | Vadodara</title>
+      <title>Lumiq Production</title>
 
       {/* Cursor */}
       <div className="cursor" ref={cursorRef} />
@@ -530,7 +545,9 @@ export default function Home() {
 
       {/* ── NAV ── */}
       <nav ref={navRef}>
-        <a href="#" className="nav-logo">Vijay<span>Vaghela</span></a>
+        <a href="#" className="nav-logo">
+  <img src="/logo.png" alt="Vijay Vaghela" style={{ height: "36px", width: "auto", objectFit: "contain" }} />
+</a>
         <div className="nav-links">
           <a href="#about">About</a>
           <a href="#packages">Packages</a>
@@ -554,10 +571,23 @@ export default function Home() {
         <div className="hero-noise" />
         <div className="hero-content">
           <div className="hero-eyebrow">AI-Powered Real Estate Video — Vadodara, Gujarat</div>
-          <h1 className="hero-title">Gujarat&apos;s First<br/><em>AI-Powered Cinematic</em><br/>Property Films</h1>
-          <p className="hero-subline">Cinematic visuals that make buyers feel the project — before they ever visit.</p>
+          <h1 className="hero-title"><br/><em>Lumiq Productions</em><br/>BRINGING YOUR VISION TO LIFE</h1>
+          <p className="hero-subline">Gujarat's First AI-Powered Cinematic Property Films.</p>
         </div>
       </section>
+
+      {/* ── WORD CYCLE ── */}
+<div className="cycle-strip">
+  <div className="cycle-text">
+    <span>YOUR</span>
+    <div className="cycle-word-wrap">
+      <span className="cycle-word">CINEMATIC</span>
+      <span className="cycle-word">CREATIVE</span>
+      <span className="cycle-word">TRUSTED</span>
+    </div>
+    <span>PARTNER</span>
+  </div>
+</div>
 
       {/* ── ABOUT ── */}
       <section className="about-section" id="about">
@@ -566,7 +596,7 @@ export default function Home() {
           <h2>Gujarat&apos;s First AI-Powered Real Estate Video Specialist</h2>
         </div>
         <div className="about-right reveal reveal-d2">
-          <p>I&apos;m Vijay Vaghela — a real estate video specialist based in Vadodara, Gujarat. I create <strong>AI-powered cinematic property films</strong> for developers and builders who want their projects to stand out in a market full of average content.</p>
+          <p>I&apos;Welcome to Lumiq Productions, the place where eye-catching images come to life. Our committed team of videographers, based in Karjan, Gujarat, India, specializes in producing captivating and inspiring images. We bring passion and enthusiasm to every project with a warm and approachable behavior, making it an unforgettable experience for everyone. Our passion is creating eye-catching images that have a lasting impact on your brand, professional goals, or personal journey. Together, let's use the power of AI-enhanced editing and outstanding videography to bring your vision to life..</p>
           <p>Using AI-enhanced editing, professional colour grading, and real estate-specific storytelling, I help buyers <strong>feel</strong> the project before they ever visit the site. The result: faster inquiries, stronger first impressions, and properties that sell at the value they deserve.</p>
           <div className="cta-row">
             <a href="#work" className="btn-primary">
@@ -625,6 +655,7 @@ export default function Home() {
               <li><a href="https://www.instagram.com/p/DJ8kbOVoZ2B/?hl=en" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>property walkthrough reel</a></li>
               <li><a href="https://www.instagram.com/p/DP3zzcggF9G/?hl=en" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>Location benefits reel</a></li>
               <li>2 Instagram premium story designs</li>
+              <li>2 Strategic and purpose-driven scripting</li>
             </ul>
             <div className="pkg-best-for">Best for: Small builders, single-project developers, first-time clients — 4 deliverables</div>
             <div className="pkg-price">₹55,000 <span>/ 5 deliverables</span></div>
@@ -643,7 +674,7 @@ export default function Home() {
               <li>Up to 10 Clean edited photos</li>
             </ul>
             <div className="pkg-best-for">Best for: Mid-size developers, active projects, retainer potential — 7 deliverables</div>
-            <div className="pkg-price">₹95,000 <span>/ 7 deliverables</span></div>
+            <div className="pkg-price">₹95,000 <span>/ 8 deliverables</span></div>
             <button className="pkg-cta" onClick={() => setOrderPkg("Signature — ₹95,000")}>Choose Signature →</button>
           </div>
 
@@ -660,7 +691,7 @@ export default function Home() {
               <li>Free raw photos</li>
             </ul>
             <div className="pkg-best-for">Best for: Premium developers, luxury projects, established brands — 11 deliverables</div>
-            <div className="pkg-price">₹1,50,000 <span>/ 10 deliverables</span></div>
+            <div className="pkg-price">₹1,50,000 <span>/ 12 deliverables</span></div>
             <button className="pkg-cta" onClick={() => setOrderPkg("Prestige — ₹1,50,000")}>Choose Prestige →</button>
           </div>
 

@@ -672,7 +672,7 @@ export default function Home() {
               
               <li>Up to 10 Clean edited photos</li>
             </ul>
-            <div className="pkg-price">₹95,000 <span>/ 8 deliverables</span></div>
+            <div className="pkg-price">₹95,000 <span>/ 9 deliverables</span></div>
             <button className="pkg-cta" onClick={() => setOrderPkg("Signature — ₹95,000")}>Choose Signature →</button>
           </div>
 
@@ -689,7 +689,7 @@ export default function Home() {
               <li>Up to 25 Clean edited photos</li>
               <li>Free raw photos</li>
             </ul>
-            <div className="pkg-price">₹1,50,000 <span>/ 12 deliverables</span></div>
+            <div className="pkg-price">₹1,50,000 <span>/ 13 deliverables</span></div>
             <button className="pkg-cta" onClick={() => setOrderPkg("Prestige — ₹1,50,000")}>Choose Prestige →</button>
           </div>
 

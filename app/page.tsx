@@ -651,7 +651,8 @@ export default function Home() {
               <li><a href="https://www.instagram.com/p/DP3zzcggF9G/?hl=en" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>Property introduction video(Talk with a vertical steady camera)</a></li>
               <li><a href="https://www.instagram.com/p/DJ8kbOVoZ2B/?hl=en" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>property walkthrough reel</a></li>
               <li><a href="https://www.instagram.com/reel/DRmX1pDEXTR/" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>Location benefits reel</a></li>
-              <li>2 Instagram premium story designs</li>
+              <li>Up to 8 hours shoot</li>
+               <li>2 Instagram premium story designs</li>
               <li>3 Strategic and purpose-driven scrips</li>
             </ul>
             <div className="pkg-price">₹55,000 <span>/ 5 deliverables</span></div>
@@ -667,6 +668,8 @@ export default function Home() {
               <li>Everything in Spotlight</li>
               <li>1 Premium carousel post design (3–5 slides)</li>
               <li><a href="https://www.instagram.com/reel/DXHArrTkVBs/" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>90-sec cinematic engaging reel(vertical)</a></li>
+              <li><a href="https://www.instagram.com/reel/DXHArrTkVBs/" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>Story behind the property reel(up to 60 sec edit)</a></li>
+              
               <li>Up to 10 Clean edited photos</li>
             </ul>
             <div className="pkg-price">₹95,000 <span>/ 8 deliverables</span></div>
@@ -682,6 +685,7 @@ export default function Home() {
               <li>Everything in Signature</li>
               <li><a href="https://www.youtube.com/watch?v=FRDX4qrSdr4" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>Up to 3-min cinematic property film</a></li>
               <li>1 Additional carousel or story set</li>
+              <li>Up to 12 hours day & night shoot</li>
               <li>Up to 25 Clean edited photos</li>
               <li>Free raw photos</li>
             </ul>

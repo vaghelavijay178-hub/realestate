@@ -535,7 +535,7 @@ export default function Home() {
 
       {/* Page title */}
       <title>Lumiq Production</title>
-     <link rel="icon" href="/favicon.png" type="image/png" />
+     <link rel="icon" href="/favicon.ico" />
 
       {/* Cursor */}
       <div className="cursor" ref={cursorRef} />

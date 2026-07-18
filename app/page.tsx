@@ -669,10 +669,10 @@ export default function Home() {
               <li>1 Premium carousel post design (3–5 slides)</li>
               <li><a href="https://www.instagram.com/reel/DXHArrTkVBs/" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>90-sec cinematic engaging reel(vertical)</a></li>
               <li><a href="https://www.instagram.com/reel/DXHArrTkVBs/" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>Story behind the property reel(up to 60 sec edit)</a></li>
-              
+              <li>Custom-tailored promotional ad reel</li>
               <li>Up to 10 Clean edited photos</li>
             </ul>
-            <div className="pkg-price">₹95,000 <span>/ 9 deliverables</span></div>
+            <div className="pkg-price">₹95,000 <span>/ 10 deliverables</span></div>
             <button className="pkg-cta" onClick={() => setOrderPkg("Signature — ₹95,000")}>Choose Signature →</button>
           </div>
 
@@ -689,7 +689,7 @@ export default function Home() {
               <li>Up to 25 Clean edited photos</li>
               <li>Free raw photos</li>
             </ul>
-            <div className="pkg-price">₹1,50,000 <span>/ 13 deliverables</span></div>
+            <div className="pkg-price">₹1,50,000 <span>/ 15 deliverables</span></div>
             <button className="pkg-cta" onClick={() => setOrderPkg("Prestige — ₹1,50,000")}>Choose Prestige →</button>
           </div>
 

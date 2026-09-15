@@ -573,7 +573,6 @@ export default function Home() {
         <div className="hero-content">
           <div className="hero-eyebrow">AI-Powered Real Estate Video — Vadodara, Gujarat</div>
           <h1 className="hero-title"><br/><em>Lumiq Productions</em><br/>BRINGING YOUR VISION TO LIFE</h1>
-          <p className="hero-subline">Gujarat's First AI-Powered Cinematic Property Films.</p>
         </div>
       </section>
 
@@ -598,29 +597,20 @@ export default function Home() {
         </div>
         <div className="about-right reveal reveal-d2">
           <p>Welcome to Lumiq Productions, the place where eye-catching images come to life. Our company specializes in producing captivating and inspiring images. We bring passion and enthusiasm to every project with a warm and approachable attitude, making it an unforgettable experience for everyone. Our passion is creating eye-catching visuals that have a lasting impact on your brand, professional goals, or personal journey. Together, let's use the power of AI-enhanced editing and outstanding videography to bring your vision to life.</p>
-            <a href="#work" className="btn-primary">
-              Explore Work
-              <span className="arrow-dot">
-                <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
-                  <path d="M1.5 6.5H11.5M11.5 6.5L7 2M11.5 6.5L7 11" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </span>
-            </a>
-            <div className="cta-subtext">Based in Vadodara.<br/>Serving Gujarat&apos;s top developers.</div>
           </div>
       </section>
 
       {/* ── WHY REALTORS-STYLE STRIP ── */}
       <div className="why-strip reveal">
         <div className="why-strip-left">
-          <h3>Why <em>AI-Powered Cinematic</em><br/>films?</h3>
-          <p>The AI-powered cinematic film helps viewers to experience their lifestyle through what they are looking at. Gujarat&apos;s real estate market is ready for it.</p>
+                    <h3>Why <em>Specialized</em><br/>Real Estate Films?</h3>
+          <p>Generic videos don&apos;t sell properties — stories do. We create cinematic content built specifically for Gujarat&apos;s real estate market, powered by AI to deliver premium quality faster.</p>
         </div>
         <div className="why-strip-right">
           {[
-            ["01", "Buyers decide emotionally first", "Logic comes later. A cinematic film creates desire before the site visit."],
-            ["02", "Gujarat developers are underserved", "Most local content is basic. A premium film makes you stand apart instantly."],
-            ["03", "AI makes it affordable", "What used to cost ₹5L+ in production is now achievable at a fraction of the cost."],
+                        ["01", "Real estate is our only focus", "We don't shoot weddings or events — every frame we create is built to sell property and drive site visits."],
+            ["02", "We understand Gujarat buyers", "We know what resonates in this market — language, lifestyle, aspirations. Your content speaks directly to your buyer."],
+            ["03", "AI enhances, humans create", "AI gives us speed and sharpness — but the storytelling, emotion, and strategy behind every film is 100% human craft."],
           ].map(([num, title, desc]) => (
             <div className="why-item" key={num}>
               <div className="why-num">{num}</div>
@@ -709,7 +699,7 @@ export default function Home() {
       {/* ── URGENCY CTA ── */}
       <div className="urgency-strip reveal">
         <div className="urgency-text">
-          <h3>Currently accepting <em>2 projects</em> for July.</h3>
+          <h3>Currently accepting <em>2 projects</em> for September & October.</h3>
           <p>Limited slots available — reach out now to secure your project&apos;s spot.</p>
         </div>
         <a href="#contact" className="urgency-btn">Start a Conversation →</a>

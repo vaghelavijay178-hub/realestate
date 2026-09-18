@@ -416,7 +416,6 @@ export default function Home() {
 
         /* ── REELS CAROUSEL ── */
         .work-section { padding: 80px 48px 100px; background: var(--black); }
-        .work-header { margin-bottom: 48px; }
         .work-header h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.8rem, 4.5vw, 4rem); letter-spacing: 0.02em; }
         .carousel-outer { position: relative; overflow: hidden; }
         .carousel-track { position: relative; width: 100%; }
@@ -504,7 +503,6 @@ export default function Home() {
           .about-section { grid-template-columns: 1fr; padding: 60px 24px; gap: 36px; }
           .why-strip { grid-template-columns: 1fr; padding: 48px 24px; gap: 36px; }
           .packages-section { padding: 60px 24px; } .packages-grid { grid-template-columns: 1fr; }
-          .work-section { padding: 60px 24px; }
           .testi-strip { flex-direction: column; padding: 48px 24px; gap: 20px; }
           .urgency-strip { flex-direction: column; padding: 40px 24px; text-align: center; }
           footer { padding: 48px 24px 32px; } .footer-top { flex-direction: column; gap: 36px; } .footer-links { gap: 36px; }
@@ -555,9 +553,8 @@ export default function Home() {
         <div className="nav-links">
           <a href="#about">About</a>
           <a href="#packages">Packages</a>
-          <a href="#work">Work</a>
           <a href="#contact" className="btn-cta">
-            Contact Now
+            Contact Us!
             <span className="arrow-dot">
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                 <path d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -702,10 +699,10 @@ export default function Home() {
       {/* ── URGENCY CTA ── */}
       <div className="urgency-strip reveal">
         <div className="urgency-text">
-          <h3>Ready To Work With <em>The Authority?</em> </h3>
+          <h3>Choose Your Package To Work With <em>The Authority</em> </h3>
           <p>Let's talk about your next property campaign&apos;s spot.</p>
         </div>
-        <a href="#contact" className="urgency-btn">Start a Conversation →</a>
+        <a href="#contact" className="urgency-btn">Send Inquiry→</a>
       </div>
 
       {/* ── FOOTER ── */}

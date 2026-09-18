@@ -526,6 +526,7 @@ export default function Home() {
   36%  { opacity: 0; transform: translateY(-40px); }
   100% { opacity: 0; transform: translateY(-40px); } 
         }
+                .video-overlay { position: absolute; inset: 0; z-index: 2; background: transparent; pointer-events: all; }
                 .hero-video-bg { position: absolute; inset: 0; z-index: 2; overflow: hidden; }
         .hero-video-bg iframe { position: absolute; top: 50%; left: 50%; width: 177.78vh; min-width: 100%; height: 56.25vw; min-height: 100%; transform: translate(-50%, -50%); pointer-events: none; border: none; }
         @media (max-width: 768px) { .hero-video-bg iframe { width: 300vw; min-width: 300vw; height: 169vw; } }
@@ -575,12 +576,13 @@ export default function Home() {
       <section className="hero">
         <div className="hero-bg" />
         <div className="hero-glow" />
-        <div className="hero-video-bg">
+               <div className="hero-video-bg">
           <iframe
-            src="https://www.youtube.com/embed/m4o3-yJexXU?autoplay=1&mute=1&loop=1&playlist=m4o3-yJexXU&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
+            src="https://www.youtube.com/embed/wDOQ7L9h-rw?autoplay=1&mute=1&loop=1&playlist=wDOQ7L9h-rw&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&disablekb=1&fs=0"
             allow="autoplay; fullscreen"
             allowFullScreen
           />
+          <div className="video-overlay" />
         </div>
         <div className="hero-video-frame" />
         <div className="hero-noise" />

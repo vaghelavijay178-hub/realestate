@@ -329,7 +329,7 @@ export default function Home() {
         }
         html { scroll-behavior: smooth; }
         body { background: var(--black); color: var(--white); font-family: 'DM Sans', sans-serif; overflow-x: hidden; cursor: none; }
-        .cursor { width: 12px; height: 12px; background: var(--orange); border-radius: 50%; position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9999; transition: transform 0.15s ease; transform: translate(-50%,-50%); }
+        .cursor-dot { width: 10px; height: 10px; background: var(--orange); border-radius: 50%; position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9999; transform: translate(-50%,-50%); box-shadow: 0 0 10px rgba(244,80,10,0.9), 0 0 20px rgba(244,80,10,0.6), 0 0 40px rgba(244,80,10,0.3); }
         
         /* ── NAV ── */
         nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 22px 48px; background: linear-gradient(to bottom, rgba(10,10,10,0.95), transparent); transition: background 0.3s; }
@@ -543,10 +543,6 @@ export default function Home() {
             {/* Cursor */}
       <div className="cursor-dot" ref={cursorRef} />
       <div className="cursor-trail" id="trail1" />
-      <div className="cursor-trail" id="trail2" />
-      <div className="cursor-trail" id="trail3" />
-      <div className="cursor-trail" id="trail4" />
-      <div className="cursor-trail" id="trail5" />
 
       {/* Order Modal */}
       {orderPkg && <OrderModal pkg={orderPkg} onClose={() => setOrderPkg(null)} />}

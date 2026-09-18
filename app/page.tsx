@@ -330,8 +330,7 @@ export default function Home() {
         html { scroll-behavior: smooth; }
         body { background: var(--black); color: var(--white); font-family: 'DM Sans', sans-serif; overflow-x: hidden; cursor: none; }
         .cursor { width: 12px; height: 12px; background: var(--orange); border-radius: 50%; position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9999; transition: transform 0.15s ease; transform: translate(-50%,-50%); }
-        .cursor-ring { width: 36px; height: 36px; border: 1.5px solid rgba(244,80,10,0.5); border-radius: 50%; position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9998; transform: translate(-50%,-50%); transition: all 0.35s cubic-bezier(0.23,1,0.32,1); }
-
+        
         /* ── NAV ── */
         nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 22px 48px; background: linear-gradient(to bottom, rgba(10,10,10,0.95), transparent); transition: background 0.3s; }
         nav.scrolled { background: rgba(10,10,10,0.97); backdrop-filter: blur(12px); }

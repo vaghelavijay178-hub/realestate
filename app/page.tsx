@@ -185,7 +185,7 @@ function ReelsCarousel({ reels }: { reels: typeof REELS }) {
                   <>
                     <div className="reel-iframe-wrap">
                       <iframe
-                        src={"https://www.youtube.com/embed/m4o3-yJexXU?autoplay=1&mute=1&loop=1&playlist=m4o3-yJexXU&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&disablekb=1&fs=0"}
+                        src={"https://www.youtube.com/embed/wDOQ7L9h-rw?autoplay=1&mute=1&loop=1&playlist=wDOQ7L9h-rw&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&disablekb=1&fs=0"}
                         allow="autoplay; fullscreen"
                         allowFullScreen
                       />
@@ -540,9 +540,13 @@ export default function Home() {
       <title>Lumiq Production</title>
       <link rel="icon" type="image/png" href="/favicon.png" />
 
-      {/* Cursor */}
-      <div className="cursor" ref={cursorRef} />
-      <div className="cursor-ring" ref={ringRef} />
+            {/* Cursor */}
+      <div className="cursor-dot" ref={cursorRef} />
+      <div className="cursor-trail" id="trail1" />
+      <div className="cursor-trail" id="trail2" />
+      <div className="cursor-trail" id="trail3" />
+      <div className="cursor-trail" id="trail4" />
+      <div className="cursor-trail" id="trail5" />
 
       {/* Order Modal */}
       {orderPkg && <OrderModal pkg={orderPkg} onClose={() => setOrderPkg(null)} />}

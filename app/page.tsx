@@ -446,7 +446,7 @@ export default function Home() {
         .carousel-dot.active { background: var(--orange); transform: scale(1.5); }
 
         /* ── CTA URGENCY STRIP ── */
-        .urgency-strip { padding: 48px; background: var(--dark); border-top: 1px solid var(--gray); display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+        .urgency-strip { padding: 48px; background: var(--dark); border-top: 1px solid var(--gray); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; text-align: center; }
         .urgency-text h3 { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: var(--white); margin-bottom: 6px; }
         .urgency-text h3 em { color: var(--orange); font-style: normal; }
         .urgency-text p { font-size: 0.85rem; color: rgba(255,255,255,0.5); }
@@ -614,13 +614,13 @@ export default function Home() {
       <div className="why-strip reveal">
         <div className="why-strip-left">
                     <h3>Why <em>Specialized</em><br/>Real Estate Films?</h3>
-          <p>Generic videos don&apos;t sell properties — stories do. We create cinematic content built specifically for Gujarat&apos;s real estate market, powered by AI to deliver premium quality faster.</p>
+          < p> Anyone can point a camera at a house. We built Luminity to do the opposite of what most real estate media companies do: slow down, get it right, and hand back work that makes the agent look like the authority in their market, not just another listing in a feed</p>
         </div>
         <div className="why-strip-right">
           {[
                         ["01", "Real estate is our only focus", "We don't shoot weddings or events — every frame we create is built to sell property and drive site visits."],
             ["02", "We understand Gujarat buyers", "We know what resonates in this market — language, lifestyle, aspirations. Your content speaks directly to your buyer."],
-            ["03", "AI enhances, humans create", "AI gives us speed and sharpness — but the storytelling, emotion, and strategy behind every film is 100% human craft."],
+            ["03", "Relationship-Led, Not Transactional", "We work closely with a select group of builders rather than chasing high-volume, one-off jobs. That means we understand your brand, your market and your standards long before the camera comes out."],
           ].map(([num, title, desc]) => (
             <div className="why-item" key={num}>
               <div className="why-num">{num}</div>
@@ -649,12 +649,13 @@ export default function Home() {
             <div className="pkg-name">Spotlight</div>
             <div className="pkg-tagline">Get seen. Get remembered.</div>
             <ul className="pkg-features">
-              <li><a href="https://www.instagram.com/p/DP3zzcggF9G/?hl=en" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>Property introduction video(Talk with a vertical steady camera)</a></li>
-              <li><a href="https://www.instagram.com/p/DJ8kbOVoZ2B/?hl=en" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>property walkthrough reel</a></li>
-              <li><a href="https://www.instagram.com/reel/DRmX1pDEXTR/" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>Location benefits reel</a></li>
+              <li><a href="" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:" rgba(255,255,255,0.25)", textDecoration:"none"}}>Property introduction video(Talk with a vertical steady camera)</a></li>
+              <li><a href="" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:" rgba(255,255,255,0.25)", textDecoration:"none"}}>property walkthrough reel</a></li>
+              <li><a href="" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>Location benefits reel</a></li>
               <li>Up to 8 hours shoot</li>
-               <li>2 Instagram premium story designs</li>
+               <li>12 Instagram premium story designs</li>
               <li>3 Strategic and purpose-driven scrips</li>
+              <li>Up to 25 Clean edited photos</li>
             </ul>
             <div className="pkg-price">₹55,000 <span>/ 5 deliverables</span></div>
             <button className="pkg-cta" onClick={() => setOrderPkg("Spotlight — ₹55,000")}>Choose Spotlight →</button>
@@ -667,11 +668,12 @@ export default function Home() {
             <div className="pkg-tagline">Convert attention into trust.</div>
             <ul className="pkg-features">
               <li>Everything in Spotlight</li>
-              <li>1 Premium carousel post design (3–5 slides)</li>
-              <li><a href="https://www.instagram.com/reel/DXHArrTkVBs/" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>90-sec cinematic engaging reel(vertical)</a></li>
-              <li><a href="https://www.instagram.com/reel/DXHArrTkVBs/" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>Story behind the property reel(up to 60 sec edit)</a></li>
+              <li>5 Premium carousel post design (3–5 slides)</li>
+              <li><a href="" style={{color:"inherit", borderBottom:" rgba(255,255,255,0.25)", textDecoration:"none"}}>90-sec cinematic engaging reel(vertical)</a></li>
+              <li><a href="" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:" rgba(255,255,255,0.25)", textDecoration:"none"}}>Story behind the property reel(up to 60 sec edit)</a></li>
               <li>Custom-tailored promotional ad reel</li>
-              <li>Up to 10 Clean edited photos</li>
+              <li>Free of cost 30 days ad run</li>
+              <li>Up to 50 Clean edited photos</li>
             </ul>
             <div className="pkg-price">₹95,000 <span>/ 10 deliverables</span></div>
             <button className="pkg-cta" onClick={() => setOrderPkg("Signature — ₹95,000")}>Choose Signature →</button>
@@ -684,10 +686,10 @@ export default function Home() {
             <div className="pkg-tagline">The film that defines the project.</div>
             <ul className="pkg-features">
               <li>Everything in Signature</li>
-              <li><a href="https://www.youtube.com/watch?v=FRDX4qrSdr4" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>Up to 3-min cinematic property film</a></li>
+              <li><a href="h" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:" rgba(255,255,255,0.25)", textDecoration:"none"}}>Up to 3-min cinematic property film</a></li>
               <li>1 Additional carousel or story set</li>
               <li>Up to 12 hours day & night shoot</li>
-              <li>Up to 25 Clean edited photos</li>
+              <li>Up to 70 Clean edited photos</li>
               <li>Free raw photos</li>
             </ul>
             <div className="pkg-price">₹1,50,000 <span>/ 15 deliverables</span></div>
@@ -697,20 +699,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── REELS CAROUSEL ── */}
-      <section className="work-section" id="work">
-        <div className="work-header reveal">
-          <div className="section-eyebrow">Selected Work</div>
-          <h2>Recent Reels</h2>
-        </div>
-        <ReelsCarousel reels={REELS} />
-      </section>
-
       {/* ── URGENCY CTA ── */}
       <div className="urgency-strip reveal">
         <div className="urgency-text">
-          <h3>Currently accepting <em>2 projects</em> for September & October.</h3>
-          <p>Limited slots available — reach out now to secure your project&apos;s spot.</p>
+          <h3>Ready To Work With <em>The Authority?</em> </h3>
+          <p>Let's talk about your next property campaign&apos;s spot.</p>
         </div>
         <a href="#contact" className="urgency-btn">Start a Conversation →</a>
       </div>

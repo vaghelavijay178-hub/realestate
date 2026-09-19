@@ -93,7 +93,7 @@ function InquiryModal({ onClose }: { onClose: () => void }) {
                 <label>Tell us about your project</label>
                 <textarea name="project" placeholder="Project name, location, type of content you need..." value={form.project} onChange={handle} rows={4} />
               </div>
-              <button className="urgency-btn" onClick={() => setShowInquiry(true)}>Send Inquiry →</button>
+              <button type="submit" className="modal-submit">Send Inquiry →</button>
             </form>
           </>
         ) : (

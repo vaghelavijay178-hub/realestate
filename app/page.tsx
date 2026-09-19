@@ -53,6 +53,63 @@ const REELS = [
   },
 ];
 
+// ─── Inquiry Modal ────────────────────────────────────────────────────────────
+function InquiryModal({ onClose }: { onClose: () => void }) {
+  const [step, setStep] = useState<"form" | "thanks">("form");
+  const [form, setForm] = useState({ name: "", email: "", phone: "", project: "" });
+
+  const handle = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
+    setForm({ ...form, [e.target.name]: e.target.value });
+
+  const submit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!form.name || !form.email) return;
+    setStep("thanks");
+  };
+
+  return (
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal-box inquiry-box" onClick={(e) => e.stopPropagation()}>
+        <button className="modal-close" onClick={onClose}>✕</button>
+        {step === "form" ? (
+          <>
+            <h2 className="inquiry-title">Contact Us!</h2>
+            <p className="inquiry-sub">Before we start talking pricing and building your campaign together, I&apos;m keen to hear more about you and your project.</p>
+            <div className="inquiry-tag">PREMIUM REAL ESTATE MEDIA</div>
+            <form onSubmit={submit} className="modal-form">
+              <div className="form-group">
+                <label>Name *</label>
+                <input name="name" placeholder="Your full name" value={form.name} onChange={handle} required />
+              </div>
+              <div className="form-group">
+                <label>Email *</label>
+                <input name="email" type="email" placeholder="you@example.com" value={form.email} onChange={handle} required />
+              </div>
+              <div className="form-group">
+                <label>Phone (optional)</label>
+                <input name="phone" placeholder="+91 XXXXX XXXXX" value={form.phone} onChange={handle} />
+              </div>
+              <div className="form-group">
+                <label>Tell us about your project</label>
+                <textarea name="project" placeholder="Project name, location, type of content you need..." value={form.project} onChange={handle} rows={4} />
+              </div>
+              <button className="urgency-btn" onClick={() => setShowInquiry(true)}>Send Inquiry →</button>
+            </form>
+          </>
+        ) : (
+          <div className="modal-thanks">
+            <div className="thanks-icon">✓</div>
+            <h3>Thank you, {form.name}!</h3>
+            <p>I&apos;ve received your inquiry and will get back to you within 24 hours on <strong>{form.email}</strong>.</p>
+            <p className="thanks-sub">Feel free to WhatsApp directly at +91 95862 39648.</p>
+            <button className="modal-submit" onClick={onClose}>Close</button>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
 // ─── Order Modal ──────────────────────────────────────────────────────────────
 function OrderModal({ pkg, onClose }: { pkg: string; onClose: () => void }) {
   const [step, setStep] = useState<"form" | "thanks">("form");
@@ -263,6 +320,7 @@ export default function Home() {
   const ringRef = useRef<HTMLDivElement>(null);
   const navRef = useRef<HTMLElement>(null);
   const [orderPkg, setOrderPkg] = useState<string | null>(null);
+  const [showInquiry, setShowInquiry] = useState(false);
 
   useEffect(() => {
     const onMouseMove = (e: MouseEvent) => {
@@ -527,6 +585,10 @@ export default function Home() {
                 .hero-video-bg { position: absolute; inset: 0; z-index: 2; overflow: hidden; }
         .hero-video-bg iframe { position: absolute; top: 50%; left: 50%; width: 177.78vh; min-width: 100%; height: 56.25vw; min-height: 100%; transform: translate(-50%, -50%); pointer-events: none; border: none; }
         @media (max-width: 768px) { .hero-video-bg iframe { width: 300vw; min-width: 300vw; height: 169vw; } }
+        .inquiry-box { max-width: 560px; }
+        .inquiry-title { font-family: 'Bebas Neue', sans-serif; font-size: 2.8rem; color: var(--white); margin-bottom: 12px; letter-spacing: 0.02em; }
+        .inquiry-sub { font-size: 0.88rem; color: rgba(255,255,255,0.5); line-height: 1.7; margin-bottom: 24px; }
+        .inquiry-tag { font-family: 'Space Mono', monospace; font-size: 0.62rem; color: rgba(255,255,255,0.3); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid #2a2a2a; }
       `}</style>
 
       {/* Fonts */}
@@ -544,6 +606,7 @@ export default function Home() {
 
       {/* Order Modal */}
       {orderPkg && <OrderModal pkg={orderPkg} onClose={() => setOrderPkg(null)} />}
+      {showInquiry && <InquiryModal onClose={() => setShowInquiry(false)} />}
 
       {/* ── NAV ── */}
       <nav ref={navRef}>

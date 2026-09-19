@@ -764,7 +764,7 @@ export default function Home() {
           <h3>Choose Your Package To Work With <em>The Authority</em> </h3>
           <p>Let's talk about your next property campaign&apos;s spot.</p>
         </div>
-        <a href="#contact" className="urgency-btn">Send Inquiry→</a>
+        <button className="urgency-btn" onClick={() => setShowInquiry(true)}>Send Inquiry →</button>
       </div>
 
       {/* ── FOOTER ── */}

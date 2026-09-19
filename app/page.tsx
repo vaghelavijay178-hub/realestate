@@ -320,8 +320,7 @@ export default function Home() {
   const ringRef = useRef<HTMLDivElement>(null);
   const navRef = useRef<HTMLElement>(null);
   const [orderPkg, setOrderPkg] = useState<string | null>(null);
-    const [showInquiry, setShowInquiry] = useState(false);
-
+  const [showInquiry, setShowInquiry] = useState(false);
   useEffect(() => {
     const onMouseMove = (e: MouseEvent) => {
       if (cursorRef.current) {

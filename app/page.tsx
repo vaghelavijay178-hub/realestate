@@ -665,7 +665,25 @@ export default function Home() {
           <h2>We don't just film properties, we make them unforgettable</h2>
         </div>
         <div className="about-right reveal reveal-d2">
-          <p>Welcome to Lumiq Productions, the place where eye-catching images come to life. Our company specializes in producing captivating and inspiring images. We bring passion and enthusiasm to every project with a warm and approachable attitude, making it an unforgettable experience for everyone. Our passion is creating eye-catching visuals that have a lasting impact on your brand, professional goals, or personal journey. Together, let's use the power of AI-enhanced editing and outstanding videography to bring your vision to life.</p>
+          <p>01. Who We Are
+
+Welcome to Lumiq Productions, where real estate meets visual storytelling. We create captivating, AI-enhanced films and visuals that bring properties to life, elevate their identity, and leave a lasting impression.
+
+02. Founder-Led Expertise
+
+Three Years of Production Experience.
+
+Founded and led by a video editor with three years of hands-on production experience, Lumiq combines creative direction, visual storytelling, and modern AI-powered techniques to deliver compelling real estate visuals.
+
+03. Why Real Estate?
+
+Every development has a story worth telling. Our exclusive focus on real estate helps us showcase architecture, highlight unique features, and present properties in ways that capture attention.
+
+04. Our Approach
+
+Quality Over Quantity.
+
+We partner with a select number of developers to give every project dedicated creative attention, thoughtful execution, and a standard of quality that never settles.</p>
           </div>
       </section>
 
@@ -734,7 +752,7 @@ export default function Home() {
               <li>Free of cost 30 days ad run</li>
               <li>Up to 50 Clean edited photos</li>
             </ul>
-            <div className="pkg-price">₹95,000 <span>/ 10 deliverables</span></div>
+            <div className="pkg-price">₹95,000 <span>/ 11 deliverables</span></div>
             <button className="pkg-cta" onClick={() => setOrderPkg("Signature — ₹95,000")}>Choose Signature →</button>
           </div>
 

@@ -689,7 +689,7 @@ export default function Home() {
       <div className="why-strip reveal">
         <div className="why-strip-left">
                     <h3>Why <em>Specialized</em><br/>Real Estate Films?</h3>
-          < p> Anyone can point a camera at a house. We built Luminity to do the opposite of what most real estate media companies do: slow down, get it right, and hand back work that makes the agent look like the authority in their market, not just another listing in a feed</p>
+          < p> Anyone can point a camera at a house. We built Lumiq to do the opposite of what most real estate media companies do: slow down, get it right, and hand back work that makes the agent look like the authority in their market, not just another listing in a feed</p>
         </div>
         <div className="why-strip-right">
           {[

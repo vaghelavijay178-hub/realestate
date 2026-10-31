@@ -708,7 +708,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ── PACKAGES ── */}
+           {/* ── PACKAGES ── */}
       <section className="packages-section" id="packages">
         <div className="packages-header reveal">
           <div>
@@ -719,7 +719,11 @@ export default function Home() {
         <div className="packages-grid">
 
           {/* #01 Spotlight */}
-           <ul className="pkg-features">
+          <div className="package-card reveal">
+            <div className="pkg-num">#01</div>
+            <div className="pkg-name">Spotlight</div>
+            <div className="pkg-tagline">Get seen. Get remembered.</div>
+            <ul className="pkg-features">
               <li>Property introduction video (Talk with a vertical steady camera)</li>
               <li>Property walkthrough reel</li>
               <li>Location benefits reel</li>
@@ -733,7 +737,11 @@ export default function Home() {
           </div>
 
           {/* #02 Signature */}
-          <ul className="pkg-features">
+          <div className="package-card featured reveal reveal-d1">
+            <div className="pkg-num">#02</div>
+            <div className="pkg-name">Signature</div>
+            <div className="pkg-tagline">Convert attention into trust.</div>
+            <ul className="pkg-features">
               <li>Everything in Spotlight</li>
               <li>5 Premium carousel post design (3–5 slides)</li>
               <li>90-sec cinematic engaging reel (vertical)</li>
@@ -747,11 +755,15 @@ export default function Home() {
           </div>
 
           {/* #03 Prestige */}
-                      <ul className="pkg-features">
+          <div className="package-card reveal reveal-d2">
+            <div className="pkg-num">#03</div>
+            <div className="pkg-name">Prestige</div>
+            <div className="pkg-tagline">The film that defines the project.</div>
+            <ul className="pkg-features">
               <li>Everything in Signature</li>
               <li>Up to 3-min cinematic property film</li>
               <li>1 Additional carousel or story set</li>
-              <li>Up to 12 hours day & night shoot</li>
+              <li>Up to 12 hours day &amp; night shoot</li>
               <li>Up to 70 Clean edited photos</li>
               <li>Free raw photos</li>
             </ul>

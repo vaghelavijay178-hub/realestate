@@ -665,25 +665,7 @@ export default function Home() {
           <h2>We don't just film properties, we make them unforgettable</h2>
         </div>
         <div className="about-right reveal reveal-d2">
-          <p>01. Who We Are
-
-Welcome to Lumiq Productions, where real estate meets visual storytelling. We create captivating, AI-enhanced films and visuals that bring properties to life, elevate their identity, and leave a lasting impression.
-
-02. Founder-Led Expertise
-
-Three Years of Production Experience.
-
-Founded and led by a video editor with three years of hands-on production experience, Lumiq combines creative direction, visual storytelling, and modern AI-powered techniques to deliver compelling real estate visuals.
-
-03. Why Real Estate?
-
-Every development has a story worth telling. Our exclusive focus on real estate helps us showcase architecture, highlight unique features, and present properties in ways that capture attention.
-
-04. Our Approach
-
-Quality Over Quantity.
-
-We partner with a select number of developers to give every project dedicated creative attention, thoughtful execution, and a standard of quality that never settles.</p>
+          <p>01.Welcome to Lumiq Productions, where exceptional real estate visuals come to life. We specialize in creating captivating and inspiring visuals that bring properties and developments to life. With passion and enthusiasm, we approach every project with a warm and collaborative attitude, making the creative journey an unforgettable experience. Our passion lies in crafting visuals that leave a lasting impression, elevate your property's identity, and support your marketing goals. Together, let's use the power of AI-enhanced editing and outstanding videography to bring your real estate vision to life.</p>
           </div>
       </section>
 

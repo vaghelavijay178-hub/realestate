@@ -665,7 +665,7 @@ export default function Home() {
           <h2>We don't just film properties, we make them unforgettable</h2>
         </div>
         <div className="about-right reveal reveal-d2">
-          <p>01.Welcome to Lumiq Productions, where exceptional real estate visuals come to life. We specialize in creating captivating and inspiring visuals that bring properties and developments to life. With passion and enthusiasm, we approach every project with a warm and collaborative attitude, making the creative journey an unforgettable experience. Our passion lies in crafting visuals that leave a lasting impression, elevate your property's identity, and support your marketing goals. Together, let's use the power of AI-enhanced editing and outstanding videography to bring your real estate vision to life.</p>
+          <p>Welcome to Lumiq Productions, where exceptional real estate visuals come to life. We specialize in creating captivating and inspiring visuals that bring properties and developments to life. With passion and enthusiasm, we approach every project with a warm and collaborative attitude, making the creative journey an unforgettable experience. Our passion lies in crafting visuals that leave a lasting impression, elevate your property's identity, and support your marketing goals. Together, let's use the power of AI-enhanced editing and outstanding videography to bring your real estate vision to life.</p>
           </div>
       </section>
 

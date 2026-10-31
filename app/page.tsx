@@ -583,7 +583,23 @@ export default function Home() {
                 .video-overlay { position: absolute; inset: 0; z-index: 2; background: transparent; pointer-events: all; }
                 .hero-video-bg { position: absolute; inset: 0; z-index: 2; overflow: hidden; }
         .hero-video-bg iframe { position: absolute; top: 50%; left: 50%; width: 177.78vh; min-width: 100%; height: 56.25vw; min-height: 100%; transform: translate(-50%, -50%); pointer-events: none; border: none; }
-        @media (max-width: 768px) { .hero-video-bg iframe { width: 300vw; min-width: 300vw; height: 169vw; } }
+               /* ── MOBILE FIXES (keep at the very end) ── */
+        @media (max-width: 768px) {
+          .nav-logo img { height: 56px !important; }
+
+          /* Hero: poora video dikhega, koi crop nahi */
+          .hero { min-height: auto; justify-content: flex-start; padding: 100px 0 40px; border-radius: 0 0 24px 24px; }
+          .hero-video-bg { position: relative; inset: auto; width: 100%; aspect-ratio: 16 / 9; z-index: 2; }
+          .hero-video-bg iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; min-width: 0; min-height: 0; transform: none; }
+          .hero-video-frame { display: none; }
+          .hero-content { padding: 28px 20px 0; }
+          .hero-title { font-size: clamp(2.4rem, 11vw, 3.6rem); line-height: 1; }
+
+          /* YOUR _word_ PARTNER: kisi bhi phone pe fit hoga */
+          .cycle-strip { padding: 28px 12px; }
+          .cycle-text { font-size: clamp(1.2rem, 6.5vw, 2rem); gap: 0.4em; letter-spacing: 0.04em; white-space: nowrap; }
+          .cycle-word-wrap { min-width: 4.8em; }
+        }
         .inquiry-box { max-width: 560px; }
         .inquiry-title { font-family: 'Bebas Neue', sans-serif; font-size: 2.8rem; color: var(--white); margin-bottom: 12px; letter-spacing: 0.02em; }
         .inquiry-sub { font-size: 0.88rem; color: rgba(255,255,255,0.5); line-height: 1.7; margin-bottom: 24px; }
@@ -703,17 +719,13 @@ export default function Home() {
         <div className="packages-grid">
 
           {/* #01 Spotlight */}
-          <div className="package-card reveal">
-            <div className="pkg-num">#01</div>
-            <div className="pkg-name">Spotlight</div>
-            <div className="pkg-tagline">Get seen. Get remembered.</div>
-            <ul className="pkg-features">
-              <li><a href="" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:" rgba(255,255,255,0.25)", textDecoration:"none"}}>Property introduction video(Talk with a vertical steady camera)</a></li>
-              <li><a href="" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:" rgba(255,255,255,0.25)", textDecoration:"none"}}>property walkthrough reel</a></li>
-              <li><a href="" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:"1px dashed rgba(255,255,255,0.25)", textDecoration:"none"}}>Location benefits reel</a></li>
+           <ul className="pkg-features">
+              <li>Property introduction video (Talk with a vertical steady camera)</li>
+              <li>Property walkthrough reel</li>
+              <li>Location benefits reel</li>
               <li>Up to 8 hours shoot</li>
-               <li>12 Instagram premium story designs</li>
-              <li>3 Strategic and purpose-driven scrips</li>
+              <li>12 Instagram premium story designs</li>
+              <li>3 Strategic and purpose-driven scripts</li>
               <li>Up to 25 Clean edited photos</li>
             </ul>
             <div className="pkg-price">₹55,000 <span>/ 5 deliverables</span></div>
@@ -721,15 +733,11 @@ export default function Home() {
           </div>
 
           {/* #02 Signature */}
-          <div className="package-card featured reveal reveal-d1">
-            <div className="pkg-num">#02</div>
-            <div className="pkg-name">Signature</div>
-            <div className="pkg-tagline">Convert attention into trust.</div>
-            <ul className="pkg-features">
+          <ul className="pkg-features">
               <li>Everything in Spotlight</li>
               <li>5 Premium carousel post design (3–5 slides)</li>
-              <li><a href="" style={{color:"inherit", borderBottom:" rgba(255,255,255,0.25)", textDecoration:"none"}}>90-sec cinematic engaging reel(vertical)</a></li>
-              <li><a href="" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:" rgba(255,255,255,0.25)", textDecoration:"none"}}>Story behind the property reel(up to 60 sec edit)</a></li>
+              <li>90-sec cinematic engaging reel (vertical)</li>
+              <li>Story behind the property reel (up to 60 sec edit)</li>
               <li>Custom-tailored promotional ad reel</li>
               <li>Free of cost 30 days ad run</li>
               <li>Up to 50 Clean edited photos</li>
@@ -739,13 +747,9 @@ export default function Home() {
           </div>
 
           {/* #03 Prestige */}
-          <div className="package-card reveal reveal-d2">
-            <div className="pkg-num">#03</div>
-            <div className="pkg-name">Prestige</div>
-            <div className="pkg-tagline">The film that defines the project.</div>
-            <ul className="pkg-features">
+                      <ul className="pkg-features">
               <li>Everything in Signature</li>
-              <li><a href="h" target="_blank" rel="noopener noreferrer" style={{color:"inherit", borderBottom:" rgba(255,255,255,0.25)", textDecoration:"none"}}>Up to 3-min cinematic property film</a></li>
+              <li>Up to 3-min cinematic property film</li>
               <li>1 Additional carousel or story set</li>
               <li>Up to 12 hours day & night shoot</li>
               <li>Up to 70 Clean edited photos</li>
